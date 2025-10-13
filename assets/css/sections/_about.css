@@ -1,0 +1,104 @@
+#sobre {
+    background-color: #111;
+    /* Um fundo um pouco diferente para criar contraste */
+    padding: 80px 0;
+    /* Espaçamento interno generoso */
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    /* Espaço entre a foto e o texto */
+}
+
+.sobre-imagem {
+    flex: 1;
+    /* Ocupa metade do espaço */
+    max-width: 400px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 50%;
+    /* Deixa a imagem redonda */
+    border: 5px solid var(--cor-dourado);
+    /* Borda dourada para combinar com a marca */
+    box-shadow: 0 0 20px rgba(218, 165, 32, 0.4);
+}
+
+.sobre-texto {
+    flex: 1.5;
+    /* Ocupa um pouco mais de espaço que a imagem */
+}
+
+.sobre-texto h2 {
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Detalhe de linha dourada abaixo do título */
+.sobre-texto h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--cor-dourado);
+    margin-top: 10px;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.sobre-texto h3 {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* Aumentei um pouco o espaço */
+}
+
+.skills-lista li {
+    background-color: #222;
+    /* Um pouco mais claro que o fundo */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    /* Para alinhar o ícone e o texto */
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
+    transition: transform 0.3s;
+}
+
+.skills-lista li:hover {
+    transform: translateY(-5px);
+    /* Efeito de levantar ao passar o mouse */
+}
+
+/* Estilo para os ícones */
+.skills-lista i {
+    font-size: 2.5rem;
+    /* Aumenta o tamanho do ícone */
+}
+
+/* Estilo para o texto ao lado do ícone */
+.skills-lista p {
+    color: var(--cor-texto);
+    /* Garante que o texto seja branco/claro */
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin: 0;
+    /* Remove a margem padrão do <p> */
+}
