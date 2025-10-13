@@ -10,4 +10,7 @@
 /* Seções */
 @import url('sections/_home.css');
 @import url('sections/_about.css');
+@import url('sections/_project.css');
+@import url('sections/_contact.css');
+@import url('sections/_footer.css');
 /* NOVA LINHA */

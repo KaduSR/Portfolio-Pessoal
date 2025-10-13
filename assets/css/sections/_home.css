@@ -2,8 +2,9 @@
     min-height: calc(100vh - 85px);
     /* Ocupa a altura da tela, descontando o header */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     /* Centraliza o conteúdo verticalmente */
+    padding-top: -60%;
 }
 
 .home-container {
