@@ -404,21 +404,3 @@ body {
         gap: 15px 25px; /* Ajusta o espaçamento para telas pequenas */
     }
     /* --- FIM DO HEADER RESPONSIVO --- */
-
-
-    .home-container {
-        flex-direction: column-reverse; /* Imagem fica em cima do texto */
-        text-align: center;
-        gap: 20px;
-    }
-
-    #home .home-texto h1 {
-        font-size: 3rem;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-}
