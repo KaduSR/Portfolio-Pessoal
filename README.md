@@ -45,8 +45,7 @@ Por ser um projeto estático, não há necessidade de instalação de dependênc
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/KaduSR/Portfolio.git](https://github.com/KaduSR/Portfolio.git)
-    ```
+    git clone https://github.com/KaduSR/Protfolio
 
 2.  **Navegue para a pasta do projeto:**
     ```bash
