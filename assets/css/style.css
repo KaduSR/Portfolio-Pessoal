@@ -368,3 +368,57 @@ body {
 }
 .contato-item:hover { transform: scale(1.1); }
 .contato-item i { font-size: 2rem; }
+
+/* ======================================================= */
+/* RESPONSIVIDADE */
+/* ======================================================= */
+
+/* Para tablets e telas um pouco menores */
+@media (max-width: 992px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-imagem {
+        max-width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .sobre-texto h2::after {
+        margin: 10px auto 0;
+    }
+}
+
+/* Para celulares e telas pequenas */
+@media (max-width: 768px) {
+    /* --- HEADER RESPONSIVO (AJUSTES) --- */
+    .header .container {
+        flex-direction: column; /* Coloca o logo acima do menu */
+        gap: 20px;
+    }
+
+    .header nav ul {
+        flex-wrap: wrap; /* Permite que os itens do menu quebrem a linha */
+        justify-content: center; /* Centraliza os itens do menu */
+        gap: 15px 25px; /* Ajusta o espaçamento para telas pequenas */
+    }
+    /* --- FIM DO HEADER RESPONSIVO --- */
+
+
+    .home-container {
+        flex-direction: column-reverse; /* Imagem fica em cima do texto */
+        text-align: center;
+        gap: 20px;
+    }
+
+    #home .home-texto h1 {
+        font-size: 3rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
