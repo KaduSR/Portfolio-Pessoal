@@ -234,11 +234,15 @@ body {
 .sobre-imagem {
   flex-shrink: 0;
   flex-basis: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .sobre-imagem img {
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
   border: 5px solid var(--cor-dourado);
   box-shadow: 0 0 20px rgba(218, 165, 32, 0.4);
 }
@@ -302,8 +306,8 @@ body {
     text-align: center;
   }
   .sobre-imagem {
-    max-width: 300px;
-    margin-bottom: 40px;
+    max-width: 350px;
+    margin-bottom: 50px;
   }
   .sobre-texto h2::after {
     margin: 10px auto 0;
