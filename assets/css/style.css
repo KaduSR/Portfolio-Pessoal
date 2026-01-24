@@ -333,15 +333,14 @@ body {
 }
 .projetos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 .projeto-card {
   background-color: #222;
   border-radius: 8px;
   overflow: hidden;
-  display: relativo;
+  display: flex;
   flex-direction: column;
   transition:
     transform 0.3s,
@@ -358,6 +357,8 @@ body {
 }
 .projeto-info {
   padding: 20px;
+  justify-content: center;
+  text-align: center;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -375,12 +376,15 @@ body {
 .projeto-tech {
   display: flex;
   gap: 15px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 .projeto-links {
   display: flex;
   gap: 15px;
+  justify-content: center;
 }
 .btn-link {
   display: flex;
