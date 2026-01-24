@@ -1,146 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kadu Dev - Desenvolvedor Web</title>
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <a href="#home">
-                <img src="assets/LogotipoPrincipal.svg" alt="Logo Kadu Dev" class="logo" />
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato" class="btn-contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="#home">
+          <img
+            src="assets/LogotipoPrincipal.svg"
+            alt="Logo Kadu Dev"
+            class="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato" class="btn-contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container home-container">
-                <div class="home-texto">
-                    <h1>Kadu Dev</h1>
-                    <p>Desenvolvedor Web apaixonado por criar interfaces dinâmicas, com um toque de rock 'n' roll.</p>
-                    <a href="#projetos" class="btn-principal">Ver Projetos</a>
-                </div>
-                <div class="home-imagem">
-                    <img src="assets/images/icone-home.png" alt="Ícone de Dragão e Guitarra">
-                </div>
-            </div>
-        </section>
+      <section id="home">
+        <div class="container home-container">
+          <div class="home-texto">
+            <h1>Kadu Dev</h1>
+            <p>
+              Desenvolvedor Web apaixonado por criar interfaces dinâmicas, com
+              um toque de rock 'n' roll.
+            </p>
+            <a href="#projetos" class="btn-principal">Ver Projetos</a>
+          </div>
+          <div class="home-imagem">
+            <img
+              src="assets/images/icone-home.png"
+              alt="Ícone de Dragão e Guitarra"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section id="sobre">
-            <div class="container sobre-container">
-                <div class="sobre-imagem">
-                    <img src="assets/images/foto-perfil.jpeg" alt="Foto de Kadu">
-                </div>
-                <div class="sobre-texto">
-                    <h2>Sobre Mim</h2>
-                    <p>Olá! Eu sou o Kadu, um desenvolvedor web que transforma café em código e ideias em realidade digital. Minha jornada na programação começou com a curiosidade de como a tecnologia funcionava e evoluiu para uma paixão por construir interfaces limpas, eficientes e agradáveis.</p>
-                    <p>Quando não estou na frente do código, provavelmente estou com uma guitarra na mão, explorando novos riffs. Acredito que a criatividade do rock e a lógica da programação têm muito em comum: ambas buscam harmonia a partir de diferentes elementos.</p>
-                    <h3>Habilidades:</h3>
-                    <ul class="skills-lista">
-                        <li><i class="devicon-html5-plain-wordmark colored"></i><p>HTML5</p></li>
-                        <li><i class="devicon-css3-plain-wordmark colored"></i><p>CSS3</p></li>
-                        <li><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></li>
-                        <li><i class="devicon-typescript-plain colored"></i><p>TypeScript</p></li>
-                        <li><i class="devicon-react-original-wordmark colored"></i><p>React</p></li>
-                        <li><i class="devicon-nodejs-plain-wordmark colored"></i><p>Node.js</p></li>
-                        <li><i class="devicon-java-plain-wordmark colored"></i><p>Java</p></li>
-                        <li><i class="devicon-git-plain-wordmark colored"></i><p>Git</p></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section id="sobre">
+        <div class="container sobre-container">
+          <div class="sobre-imagem">
+            <img src="assets/images/foto-perfil.jpeg" alt="Foto de Kadu" />
+          </div>
+          <div class="sobre-texto">
+            <h2>Sobre Mim</h2>
+            <p>
+              Olá! Eu sou o Kadu, um desenvolvedor web que transforma café em
+              código e ideias em realidade digital. Minha jornada na programação
+              começou com a curiosidade de como a tecnologia funcionava e
+              evoluiu para uma paixão por construir interfaces limpas,
+              eficientes e agradáveis.
+            </p>
+            <p>
+              Quando não estou na frente do código, provavelmente estou com uma
+              guitarra na mão, explorando novos riffs. Acredito que a
+              criatividade do rock e a lógica da programação têm muito em comum:
+              ambas buscam harmonia a partir de diferentes elementos.
+            </p>
+            <h3>Habilidades:</h3>
+            <ul class="skills-lista">
+              <li><i class="devicon-react-original colored"></i></li>
+              <li><i class="devicon-typescript-plain colored"></i></li>
+              <li><i class="devicon-tailwindcss-original colored"></i></li>
+              <li><i class="devicon-vitejs-plain colored"></i></li>
+              <li><i class="devicon-nodejs-plain colored"></i></li>
+              <li><i class="devicon-html5-plain colored"></i></li>
+              <li><i class="devicon-css3-plain colored"></i></li>
+              <li><i class="devicon-javascript-plain colored"></i></li>
+              <li><i class="devicon-git-plain colored"></i></li>
+              <li><i class="devicon-googlecloud-plain colored"></i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section id="projetos">
-            <div class="container">
-                <h2>Meus Projetos</h2>
-                <div class="projetos-grid">
-                    <div class="projeto-card">
-                        <div class="projeto-imagem">
-                            <img src="assets/images/myflix-print.png" alt="Imagem do Projeto MyFlix">
-                        </div>
-                        <div class="projeto-info">
-                            <h3>MyFlix</h3>
-                            <p>Interface inspirada na Netflix para explorar filmes e séries, consumindo a API do TMDB. Inclui busca, detalhes e player de trailer.</p>
-                            <ul class="projeto-tech">
-                                <li><i class="devicon-react-original colored"></i></li>
-                                <li><i class="devicon-typescript-plain colored"></i></li>
-                                <li><i class="devicon-css3-plain colored"></i></li>
-                                <li><i class="devicon-vitejs-plain colored"></i></li>
-                            </ul>
-                            <div class="projeto-links">
-                                <a href="https://github.com/KaduSR/Myflix" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://myflix.kadudev.com/" target="_blank" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projeto-card">
-                        <div class="projeto-imagem">
-                            <img src="assets/images/prompts-print.png" alt="Imagem do Projeto Gerenciador de Prompts">
-                        </div>
-                        <div class="projeto-info">
-                            <h3>Gerenciador de Prompts</h3>
-                            <p>Aplicação para criar, salvar e gerenciar prompts, utilizando o localStorage do navegador. Foco em manipulação do DOM e design responsivo.</p>
-                            <ul class="projeto-tech">
-                                <li><i class="devicon-html5-plain colored"></i></li>
-                                <li><i class="devicon-css3-plain colored"></i></li>
-                                <li><i class="devicon-javascript-plain colored"></i></li>
-                            </ul>
-                            <div class="projeto-links">
-                                <a href="https://github.com/KaduSR/Gerenciador-de-Prompts" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
-                                <a href="https://prompts.kadudev.com/" target="_blank" class="btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-                            </div>
-                        </div>
-                    </div>
+      <section id="projetos">
+        <div class="container">
+          <h2>Meus Projetos</h2>
+          <div class="projetos-grid">
+            <div class="projeto-card">
+              <div class="projeto-imagem">
+                <img
+                  src="assets/images/myflix-print.png"
+                  alt="Imagem do Projeto MyFlix"
+                />
+              </div>
+              <div class="projeto-info">
+                <h3>MyFlix</h3>
+                <p>
+                  Interface inspirada na Netflix para explorar filmes e séries,
+                  consumindo a API do TMDB. Inclui busca, detalhes e player de
+                  trailer.
+                </p>
+                <ul class="projeto-tech">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                  <li><i class="devicon-vitejs-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a
+                    href="https://github.com/KaduSR/Myflix"
+                    target="_blank"
+                    class="btn-link"
+                    ><i class="fa-brands fa-github"></i> Código</a
+                  >
+                  <a
+                    href="https://myflix.kadudev.com/"
+                    target="_blank"
+                    class="btn-link"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo</a
+                  >
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="projeto-card">
+              <div class="projeto-imagem">
+                <img
+                  src="assets/images/prompts-print.png"
+                  alt="Imagem do Projeto Gerenciador de Prompts"
+                />
+              </div>
+              <div class="projeto-info">
+                <h3>Gerenciador de Prompts</h3>
+                <p>
+                  Aplicação para criar, salvar e gerenciar prompts, utilizando o
+                  localStorage do navegador. Foco em manipulação do DOM e design
+                  responsivo.
+                </p>
+                <ul class="projeto-tech">
+                  <li><i class="devicon-html5-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                  <li><i class="devicon-javascript-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a
+                    href="https://github.com/KaduSR/Gerenciador-de-Prompts"
+                    target="_blank"
+                    class="btn-link"
+                    ><i class="fa-brands fa-github"></i> Código</a
+                  >
+                  <a
+                    href="https://prompts.kadudev.com/"
+                    target="_blank"
+                    class="btn-link"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="projeto-card">
+              <div class="projeto-imagem">
+                <img
+                  src="assets/images/fibernet-print.png"
+                  alt="Imagem do Projeto Gerenciador de Prompts"
+                />
+              </div>
+              <div class="projeto-info">
+                <h3>Projeto Fiber NET Telecom</h3>
+                <p>
+                  Melhoreia do site da Fiber NET Telecom com uma interface mais
+                  moderna e responsiva.
+                </p>
+                <ul class="projeto-tech">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-tailwindcss-original colored"></i></li>
+                  <li><i class="devicon-vitejs-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-html5-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                  <li><i class="devicon-javascript-plain colored"></i></li>
+                  <li><i class="devicon-git-plain colored"></i></li>
+                  <li><i class="devicon-googlecloud-plain colored"></i></li>
+                </ul>
+                <div class="projeto-ProjetoFiber">
+                  <a
+                    href="https://github.com/KaduSR/Fiber-NET-Telecom-Web"
+                    target="_blank"
+                    class="btn-link"
+                    ><i class="fa-brands fa-github"></i> Código</a
+                  >
+                  <a
+                    href="https://fibernettelecom.com/"
+                    target="_blank"
+                    class="btn-link"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="contato">
-            <div class="container">
-                <h2>Vamos Conversar?</h2>
-                <p>Estou sempre aberto a novas oportunidades, projetos freelance e colaborações. Sinta-se à vontade para entrar em contato.</p>
-                <div class="contato-links">
-                    <a href="mailto:kaduesr@gmail.com" class="contato-item"><i class="fa-solid fa-envelope"></i><span>kaduesr@gmail.com</span></a>
-                    <a href="https://www.linkedin.com/in/kaduesr/" target="_blank" class="contato-item"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
-                    <a href="https://github.com/KaduSR" target="_blank" class="contato-item"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
-                </div>
-            </div>
-        </section>
+      <section id="contato">
+        <div class="container">
+          <h2>Vamos Conversar?</h2>
+          <p>
+            Estou sempre aberto a novas oportunidades, projetos freelance e
+            colaborações. Sinta-se à vontade para entrar em contato.
+          </p>
+          <div class="contato-links">
+            <a href="mailto:kaduesr@gmail.com" class="contato-item"
+              ><i class="fa-solid fa-envelope"></i
+              ><span>kaduesr@gmail.com</span></a
+            >
+            <a
+              href="https://www.linkedin.com/in/kaduesr/"
+              target="_blank"
+              class="contato-item"
+              ><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a
+            >
+            <a
+              href="https://github.com/KaduSR"
+              target="_blank"
+              class="contato-item"
+              ><i class="fa-brands fa-github"></i><span>GitHub</span></a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-sociais">
-                <a href="https://www.linkedin.com/in/kaduesr/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/KaduSR" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <p>&copy; 2024 Kadu Dev. Todos os direitos reservados.</p>
+      <div class="container footer-container">
+        <div class="footer-sociais">
+          <a href="https://www.linkedin.com/in/kaduesr/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/KaduSR" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
+        <p>&copy; 2024 Kadu Dev. Todos os direitos reservados.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
