@@ -1,0 +1,77 @@
+name: Check for LinkedIn Profile Updates
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # Every Monday at midnight
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  check-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get last commit date for content.ts
+        id: last_commit
+        run: |
+          LAST_CHANGE=$(git log -1 --format="%ai" -- src/lib/content.ts 2>/dev/null || echo "never")
+          echo "last_change=$LAST_CHANGE" >> $GITHUB_ENV
+
+      - name: Create Issue if content has not been updated recently
+        run: |
+          echo "Checking dates..."
+          echo "Last content change: ${{ env.last_change }}"
+
+      - name: Check and notify
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const { execSync } = require('child_process');
+
+            // Get last change date of content.ts
+            let lastChange;
+            try {
+              lastChange = execSync('git log -1 --format="%ai" -- src/lib/content.ts').toString().trim();
+            } catch (e) {
+              lastChange = 'never';
+            }
+
+            if (!lastChange || lastChange === 'never') {
+              return; // First run
+            }
+
+            const lastDate = new Date(lastChange);
+            const now = new Date();
+            const daysSinceUpdate = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
+
+            console.log(`Content last updated: ${lastChange}`);
+            console.log(`Days since last update: ${daysSinceUpdate}`);
+
+            if (daysSinceUpdate > 30) {
+              const { data: issues } = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                labels: ['update-portfolio']
+              });
+
+              if (issues.length === 0) {
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: '📝 Seu perfil do LinkedIn pode estar desatualizado no portfólio',
+                  labels: ['update-portfolio'],
+                  body: `Seu portfólio não é atualizado automaticamente com seu LinkedIn há **${daysSinceUpdate} dias**.
+
+Para manter tudo alinhado:
+1. Acesse seu [LinkedIn](https://linkedin.com/in/kaduesr)
+2. Compare com \`src/lib/content.ts\`
+3. Edite o arquivo com as novidades
+4. Faça deploy
+
+_Esta issue foi gerada automaticamente pelo GitHub Actions._`
+                });
+              }
+            }
