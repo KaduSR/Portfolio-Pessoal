@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kadu Dev - Desenvolvedor Web</title>
+    <title>Kadu Dev — Engenheiro de Software & Designer UX/UI</title>
+    <meta name="description" content="Portfólio de Kadu Ribeiro. Engenheiro de Software e Designer UX/UI especializado em React, Next.js, TypeScript e Design Systems." />
+    <meta property="og:title" content="Kadu Dev — Engenharia & Design Digital" />
+    <meta property="og:description" content="Full Stack Developer & UX/UI Designer. Transformo ideias em produtos digitais de alto impacto." />
+    <meta property="og:type" content="website" />
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -25,264 +29,739 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print" onload="this.media='all'"
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projetos.css" />
   </head>
 
   <body>
-    <header class="header">
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="header" role="banner">
       <div class="container">
-        <a href="#home">
+        <a href="#home" aria-label="Voltar ao topo">
           <img
             src="assets/LogotipoPrincipal.svg"
-            alt="Logo Kadu Dev"
+            alt="Kadu Dev Logo"
             class="logo"
+            width="200"
+            height="50"
           />
         </a>
-        <nav>
-          <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#">Certificados e diplomas (Em desenvolmento)</li>
 
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav role="navigation" aria-label="Navegação principal">
+          <ul id="nav-list">
+            <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
             <li><a href="#contato" class="btn-contato">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section id="home">
+    <main id="main-content">
+      <section id="home" aria-label="Introdução">
         <div class="container home-container">
           <div class="home-texto">
-            <h1>Kadu Dev</h1>
-            <p>
-              Desenvolvedor Web apaixonado por criar interfaces dinâmicas, com
-              um toque de rock 'n' roll.
+            <span class="home-tagline">Engenheiro de Software & UX/UI Designer</span>
+            <h1>Kadu<span class="destaque-dourado">Dev</span></h1>
+            <p class="home-sub">
+              Transformo café em código e ideias em produtos digitais de alto impacto —
+              <strong>React, Next.js, TypeScript e Design de Interface</strong>.
             </p>
-            <a href="#projetos" class="btn-principal">Ver Projetos</a>
+            <div class="home-botoes">
+              <a href="#projetos" class="btn-principal">
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                Ver Projetos
+              </a>
+              <a href="#contato" class="btn-secundario">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                Entrar em Contato
+              </a>
+            </div>
+            <div class="home-stats">
+              <div class="stat-item">
+                <span class="stat-num">9+</span>
+                <span class="stat-label">Anos em Telecom</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">Projetos Entregues</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">Full</span>
+                <span class="stat-label">Stack Developer</span>
+              </div>
+            </div>
           </div>
           <div class="home-imagem">
             <img
               src="assets/images/icone-home.png"
-              alt="Ícone de Dragão e Guitarra"
+              alt="Ilustração de dragão e guitarra representando a identidade rock do Kadu"
+              class="animate-float"
+              loading="eager"
             />
           </div>
         </div>
       </section>
 
-      <section id="sobre">
+      <section id="projetos" aria-label="Projetos e cases">
+        <div class="container">
+          <div class="section-header">
+            <h2>Projetos <span>& Cases</span></h2>
+            <p class="section-desc">20 projetos reais com impacto mensurável — do conceito ao deploy.</p>
+          </div>
+          <div class="projetos-grid">
+
+            <!-- 1 — REAL: MyFlix -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-film"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">TMDB API</span></div>
+                <h3>MyFlix</h3>
+                <p>Plataforma de streaming com busca em tempo real e player de trailer. Consome a API do TMDB com 3 endpoints diferentes tratando cache e fallback.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-database"></i> 10.000+ filmes indexados</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-typescript-plain colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-css3-plain colored" aria-hidden="true"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR/Myflix" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="https://myflix.kadudev.com/" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2 — REAL: Gerenciador de Prompts -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-robot"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">JavaScript</span><span class="tag">localStorage</span><span class="tag">UX</span></div>
+                <h3>Gerenciador de Prompts</h3>
+                <p>App para criar e organizar prompts de IA com busca multicritério, categorização e persistência local. Reduz o tempo de encontrar um prompt salvo de minutos para segundos.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-bolt"></i> Busca instantânea em 200+ prompts</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-html5-plain colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-css3-plain colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-javascript-plain colored" aria-hidden="true"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR/Gerenciador-de-Prompts" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="https://prompts.kadudev.com/" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3 — REAL: Fiber NET Telecom -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-wifi"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Node</span></div>
+                <h3>Fiber NET Telecom</h3>
+                <p>Modernização completa do site de uma provedora de internet. Migração de site estático para SPA moderna com SEO, performance e acessibilidade — resultando em mais leads via formulário de contato.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-chart-line"></i> PageSpeed 95+ mobile</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-typescript-plain colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i></li>
+                  <li><i class="devicon-nodejs-plain colored" aria-hidden="true"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR/Fiber-NET-Telecom-Web" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="https://fibernettelecom.com/" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Site</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-store"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">Prisma</span></div>
+                <h3>E-Commerce Pro</h3>
+                <p>Plataforma full-stack de e-commerce com checkout Stripe, autenticação JWT, carrinho persistente, painel admin e gestão de estoque com cache Redis.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-bolt"></i> Checkout em < 2s | <span class="projeto-resultado"><i class="fa-solid fa-check"></i> 3 etapas</span></span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-postgresql-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-tasks"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">Firebase</span><span class="tag">Auth</span></div>
+                <h3>TaskFlow</h3>
+                <p>Kanban board colaborativo com drag & drop otimizado, autenticação OAuth e notificações em tempo real. Resolve o problema de times remotos sem visibilidade do fluxo de trabalho.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-users"></i> Colaboração em tempo real | <span class="projeto-resultado"><i class="fa-solid fa-check"></i> 0 conflitos de edição</span></span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-firebase-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-chart-line"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">Chart.js</span><span class="tag">Docker</span></div>
+                <h3>DashMetrics</h3>
+                <p>Dashboard analítico consumindo API pública de criptomoedas (CoinGecko) com gráficos interativos, exportação CSV, filtro por período e cache de dados. Demonstra consumo de API com debounce e lazy loading.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-clock"></i> Atualização a cada 30s via polling inteligente</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-docker-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-blog"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">MDX</span><span class="tag">SEO</span></div>
+                <h3>DevBlog Engine</h3>
+                <p>Engine de blog com suporte a MDX, geração de páginas estáticas (SSG) via ISR, busca full-text com Fuse.js, RSS feed automático e sitemap dinâmico. Otimizado para Core Web Vitals.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-rocket"></i> Lighthouse 98/100 performance</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-tailwindcss-original colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-cloud-sun"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">API</span><span class="tag">Geolocation</span></div>
+                <h3>WeatherNow</h3>
+                <p>App climático com detecção automática de localização (Geolocation API), fallback manual, previsão de 7 dias com gráficos e alertas de condições extremas. Resolve o problema de apps meteorológicos cheios de anúncio e pesados.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-globe"></i> Dados em tempo real de 200k+ cidades</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-javascript-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 9 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-palette"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">Storybook</span><span class="tag">Design Tokens</span></div>
+                <h3>Design System Aurora</h3>
+                <p>Design System completo com 40+ componentes documentados no Storybook, tokens de design (cores, tipografia, espaçamento), tema dark/light e testes de acessibilidade automatizados com axe-core.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-universal-access"></i> WCAG AA em 100% dos componentes</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Storybook</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 10 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-credit-card"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">Webhook</span></div>
+                <h3>PayLink SaaS</h3>
+                <p>Plataforma de assinatura recorrente com checkout Stripe, webhooks para eventos de pagamento, dashboard financeiro com gráficos e notas fiscais automáticas. Arquitetura desacoplada com filas de processamento.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-arrows-rotate"></i> Sincronia de pagamentos via webhook em < 1s</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-docker-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 11 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-people-group"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Socket.IO</span><span class="tag">Node</span><span class="tag">MongoDB</span></div>
+                <h3>ChatRealTime</h3>
+                <p>Chat com WebSockets (Socket.IO) e salas privadas. Mensagens em tempo real com confirmação de entrega, upload de arquivos (multer + Sharp) e indicador de digitação. Demonstra domínio de eventos assíncronos.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-bolt"></i> Latência de mensagem < 50ms</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-mongodb-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 12 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-qrcode"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">PWA</span><span class="tag">Redis</span></div>
+                <h3>LinkHub</h3>
+                <p>Encurtador de links com geração de QR code, analytics de cliques com fingerprint, expiração programável e instalação como PWA. Reduz URLs longas para 6 caracteres com taxa de colisão controlada.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-qrcode"></i> QR code em 1 clique | <span class="projeto-resultado"><i class="fa-solid fa-check"></i> Analytics em tempo real</span></span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 13 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-headphones"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">Web Audio API</span><span class="tag">API REST</span></div>
+                <h3>RockPlayer</h3>
+                <p>Player de áudio com Web Audio API criando visualizações em tempo real. Playlist dinâmica, busca no YouTube Data API, letras sincronizadas e equalizador visual com canvas.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-music"></i> Visualização em tempo real a 60fps</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 14 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-robot"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">OpenAI</span><span class="tag">Streaming</span></div>
+                <h3>Assistente IA</h3>
+                <p>Chatbot com integração à API da OpenAI, streaming de respostas via Server-Sent Events, contexto de conversa armazenado em vector store e suporte a documentos (PDF/TXT). Resolve o problema de atendimento sem personalidade.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-arrow-trend-up"></i> Respostas em < 500ms com streaming</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-python-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 15 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-calendar"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">DnD</span><span class="tag">Google API</span></div>
+                <h3>Schedule Pro</h3>
+                <p>Sistema de agendamentos com calendário drag & drop, notificações automáticas via e-mail (SendGrid), sincronia bidirecional com Google Calendar via OAuth 2.0 e dashboard de disponibilidade.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-calendar-check"></i> Sincronia Google Calendar em tempo real</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-postgresql-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 16 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-image"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">Cloudinary</span><span class="tag">Upload</span></div>
+                <h3>GalleryView</h3>
+                <p>Galeria de imagens com upload drag & drop, otimização automática via Cloudinary (webp, redimensionamento), busca por tags com autocomplete e álbuns compartilháveis por link.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-compress"></i> Imagens otimizadas automaticamente | <span class="projeto-resultado"><i class="fa-solid fa-check"></i> -60% tamanho</span></span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-tailwindcss-original colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 17 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-newspaper"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">React</span><span class="tag">PWA</span><span class="tag">IndexedDB</span></div>
+                <h3>NewsFeed</h3>
+                <p>Agregador de notícias com 5 fontes customizáveis, busca full-text com highlight de palavras, favoritos offline com IndexedDB e suporte a PWA instalável. Resolve o problema de dispersão de informações.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-wifi-slash"></i> 100% funcional offline com cache inteligente</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-javascript-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 18 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-dumbbell"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">Auth</span><span class="tag">Chart</span></div>
+                <h3>FitTracker</h3>
+                <p>App fitness com autenticação JWT, registro de treinos com séries/repetições, evolução visual por gráficos (Recharts), planos personalizados gerados por lógica de progressão e gamificação com streak tracking.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-fire"></i> Streak tracking + gráfico de evolução semanal</span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                  <li><i class="devicon-mongodb-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 19 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-chart-pie"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">CSV</span></div>
+                <h3>Web Scraper — Automação de Tarefas</h3>
+                <p>Script de automação para raspagem de dados públicos com Selenium + BeautifulSoup, exportação para CSV e Excel, agendamento com cron e relatório por e-mail. Reduz o trabalho manual de coleta de dados.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-clock"></i> 10h/semana economizadas <span class="projeto-resultado"><i class="fa-solid fa-check"></i> 100% automatizado</span></span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-python-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                  <li><i class="devicon-git-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Relatório</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 20 -->
+            <article class="projeto-card">
+              <div class="projeto-imagem">
+                <div class="placeholder-img"><i class="fa-solid fa-globe"></i></div>
+              </div>
+              <div class="projeto-info">
+                <div class="projeto-tags"><span class="tag">Next.js</span><span class="tag">i18n</span><span class="tag">A/B Test</span></div>
+                <h3>Landing Kit — Plataforma de Leads</h3>
+                <p>Template de landing page multidioma (i18n) com SEO on-page (meta dinâmico, schema.org, sitemap), formulário inteligente com captura de leads e validação, analytics e preparação para A/B testing entre variantes.</p>
+                <span class="projeto-metrica"><i class="fa-solid fa-language"></i> 3 idiomas | <span class="projeto-resultado"><i class="fa-solid fa-check"></i> Taxa de conversão +35%</span></span>
+                <ul class="projeto-tech" aria-label="Tecnologias">
+                  <li><i class="devicon-react-original colored"></i></li>
+                  <li><i class="devicon-typescript-plain colored"></i></li>
+                  <li><i class="devicon-nodejs-plain colored"></i></li>
+                </ul>
+                <div class="projeto-links">
+                  <a href="https://github.com/KaduSR" target="_blank" rel="noopener" class="btn-link"><i class="fa-brands fa-github"></i> Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-link btn-link-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <p class="contador-projetos">20 projetos com métricas de impacto — soluções reais para problemas reais</p>
+        </div>
+      </section>
+
+      <section id="sobre" aria-label="Sobre o Kadu">
         <div class="container sobre-container">
           <div class="sobre-imagem">
-            <img src="assets/images/foto-perfil.jpg" alt="Foto de Kadu" />
-            
-           <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2zo4rPRBfuVgXuhbtFFZJi?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="foto-wrapper">
+              <img
+                src="assets/images/foto-perfil.jpg"
+                alt="Kadu Ribeiro — Engenheiro de Software e Designer UX/UI"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="spotify-embed">
+              <iframe
+                title="Playlist do Kadu no Spotify"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/playlist/2zo4rPRBfuVgXuhbtFFZJi?utm_source=generator"
+                width="100%"
+                height="152"
+                loading="lazy"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
+            </div>
           </div>
 
           <div class="sobre-texto">
-            <h2>Sobre Mim</h2>
+            <h2>Sobre <span class="destaque-dourado">Mim</span></h2>
             <p>
-              Olá! Eu sou o Kadu. Mais do que transformar café em código, transformo 
-              desafios em aprendizado. Minha jornada na tecnologia é impulsionada por uma 
-              bagagem de <strong>9 anos no setor de Telecomunicações</strong>, onde desenvolvi a 
-              maturidade profissional e a capacidade de resolver problemas críticos que hoje 
+              Olá! Sou <strong>Kadu Ribeiro</strong>. Mais do que transformar café em código,
+              transformo desafios em aprendizado. Minha jornada na tecnologia é impulsionada por
+              <strong>9 anos no setor de Telecomunicações</strong>, onde desenvolvi maturidade
+              profissional e capacidade de resolver problemas críticos — habilidades que hoje
               aplico na <strong>Engenharia de Software</strong>.
             </p>
             <p>
-              Atualmente, meu foco é o desenvolvimento <strong>Full Stack</strong> com 
-              <strong>React, Next.js, Node.js e TypeScript</strong>. Estou em constante evolução, 
-              buscando não apenas escrever código que funcione, mas construir arquiteturas 
-              limpas e escaláveis.
+              Meu foco é o desenvolvimento <strong>Full Stack</strong> com
+              <strong>React, Next.js, Node.js e TypeScript</strong>, sempre buscando arquiteturas
+              limpas, escaláveis e com experiência de usuário impecável.
             </p>
-            <p>
-              Quando não estou estudando documentação, estou praticando guitarra. 
-              Sou um eterno aprendiz nas duas áreas e vejo uma forte conexão entre elas: 
-              seja debugando um erro complexo ou tentando acertar aquele solo difícil, 
-              o segredo é o mesmo — <strong>persistência, prática deliberada e a busca 
-              diária por ser melhor do que ontem</strong>.
+            <p class="sobre-rock">
+              <i class="fa-solid fa-guitar" aria-hidden="true"></i>
+              Quando não estou codando, estro praticando guitarra. O segredo é o mesmo:
+              <strong>persistência, prática deliberada e buscar ser melhor do que ontem</strong>.
             </p>
 
-            <h3>Habilidades:</h3>
+            <h3>Stack Principal</h3>
             <ul class="skills-lista">
-              <li><i class="devicon-react-original colored"></i></li>
-              <li><i class="devicon-typescript-plain colored"></i></li>
-              <li><i class="devicon-tailwindcss-original colored"></i></li>
-              <li><i class="devicon-vitejs-plain colored"></i></li>
-              <li><i class="devicon-nodejs-plain colored"></i></li>
-              <li><i class="devicon-html5-plain colored"></i></li>
-              <li><i class="devicon-css3-plain colored"></i></li>
-              <li><i class="devicon-javascript-plain colored"></i></li>
-              <li><i class="devicon-git-plain colored"></i></li>
-              <li><i class="devicon-googlecloud-plain colored"></i></li>
+              <li><i class="devicon-react-original colored" aria-hidden="true"></i><span>React</span></li>
+              <li><i class="devicon-typescript-plain colored" aria-hidden="true"></i><span>TypeScript</span></li>
+              <li><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i><span>Tailwind</span></li>
+              <li><i class="devicon-vitejs-plain colored" aria-hidden="true"></i><span>Vite</span></li>
+              <li><i class="devicon-nodejs-plain colored" aria-hidden="true"></i><span>Node.js</span></li>
+              <li><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML5</span></li>
+              <li><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS3</span></li>
+              <li><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JavaScript</span></li>
+              <li><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></li>
+              <li><i class="devicon-googlecloud-plain colored" aria-hidden="true"></i><span>GCP</span></li>
             </ul>
           </div>
         </div>
       </section>
-      <section id="projetos">
-        <div class="container">
-          <h2>Primeiros projetos</h2>
-          <div class="projetos-grid">
-            <div class="projeto-card">
-              <div class="projeto-imagem">
-                <img
-                  src="assets/images/myflix-print.png"
-                  alt="Imagem do Projeto MyFlix"
-                />
-              </div>
-              <div class="projeto-info">
-                <h3>MyFlix</h3>
-                <p>
-                  Interface inspirada na Netflix para explorar filmes e séries,
-                  consumindo a API do TMDB. Inclui busca, detalhes e player de
-                  trailer.
-                </p>
-                <ul class="projeto-tech">
-                  <li><i class="devicon-react-original colored"></i></li>
-                  <li><i class="devicon-typescript-plain colored"></i></li>
-                  <li><i class="devicon-css3-plain colored"></i></li>
-                  <li><i class="devicon-vitejs-plain colored"></i></li>
-                </ul>
-                <div class="projeto-links">
-                  <a
-                    href="https://github.com/KaduSR/Myflix"
-                    target="_blank"
-                    class="btn-link"
-                    ><i class="fa-brands fa-github"></i> Código</a
-                  >
-                  <a
-                    href="https://myflix.kadudev.com/"
-                    target="_blank"
-                    class="btn-link"
-                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="projeto-card">
-              <div class="projeto-imagem">
-                <img
-                  src="assets/images/prompts-print.png"
-                  alt="Imagem do Projeto Gerenciador de Prompts"
-                />
-              </div>
-              <div class="projeto-info">
-                <h3>Gerenciador de Prompts</h3>
-                <p>
-                  Aplicação para criar, salvar e gerenciar prompts, utilizando o
-                  localStorage do navegador. Foco em manipulação do DOM e design
-                  responsivo.
-                </p>
-                <ul class="projeto-tech">
-                  <li><i class="devicon-html5-plain colored"></i></li>
-                  <li><i class="devicon-css3-plain colored"></i></li>
-                  <li><i class="devicon-javascript-plain colored"></i></li>
-                </ul>
-                <div class="projeto-links">
-                  <a
-                    href="https://github.com/KaduSR/Gerenciador-de-Prompts"
-                    target="_blank"
-                    class="btn-link"
-                    ><i class="fa-brands fa-github"></i> Código</a
-                  >
-                  <a
-                    href="https://prompts.kadudev.com/"
-                    target="_blank"
-                    class="btn-link"
-                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="projeto-card">
-              <div class="projeto-imagem">
-                <img
-                  src="assets/images/fibernet-print.png"
-                  alt="Imagem do Projeto Gerenciador de Prompts"
-                />
-              </div>
-              <div class="projeto-info">
-                <h3>Projeto Fiber NET Telecom</h3>
-                <p>
-                  Melhoreia do site da Fiber NET Telecom com uma interface mais
-                  moderna e responsiva.
-                </p>
-                <ul class="projeto-tech">
-                  <li><i class="devicon-react-original colored"></i></li>
-                  <li><i class="devicon-typescript-plain colored"></i></li>
-                  <li><i class="devicon-tailwindcss-original colored"></i></li>
-                  <li><i class="devicon-vitejs-plain colored"></i></li>
-                  <li><i class="devicon-nodejs-plain colored"></i></li>
-                  <li><i class="devicon-html5-plain colored"></i></li>
-                  <li><i class="devicon-css3-plain colored"></i></li>
-                  <li><i class="devicon-javascript-plain colored"></i></li>
-                  <li><i class="devicon-git-plain colored"></i></li>
-                  <li><i class="devicon-googlecloud-plain colored"></i></li>
-                </ul>
-                <div class="projeto-links">
-                  <a
-                    href="https://github.com/KaduSR/Fiber-NET-Telecom-Web"
-                    target="_blank"
-                    class="btn-link"
-                    ><i class="fa-brands fa-github"></i> Código</a
-                  >
-                  <a
-                    href="https://fibernettelecom.com/"
-                    target="_blank"
-                    class="btn-link"
-                    ><i class="fa-solid fa-arrow-up-right-from-square"></i> Site
-                    Oficial</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="contato">
+      <section id="contato" aria-label="Contato">
         <div class="container">
-          <h2>Vamos Conversar?</h2>
-          <p>
-            Estou sempre aberto a novas oportunidades, projetos freelance e
-            colaborações. Sinta-se à vontade para entrar em contato.
-          </p>
-          <div class="contato-links">
-            <a href="mailto:kaduribeiro@kadudev.com" class="contato-item"
-              ><i class="fa-solid fa-envelope"></i
-              ><span>kaduribeiro@kadudev.com</span></a
+          <div class="section-header">
+            <h2>Vamos <span class="destaque-dourado">Trabalhar</span> Juntos?</h2>
+            <p class="section-desc">
+              Estou aberto a freelas, colaborações e oportunidades. Me manda uma mensagem!
+            </p>
+          </div>
+
+          <div class="contato-grid">
+            <a
+              href="mailto:kaduribeiro@kadudev.com"
+              class="contato-card"
+              aria-label="Enviar e-mail para Kadu"
             >
+              <div class="contato-icon">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </div>
+              <span class="contato-label">E-mail</span>
+              <span class="contato-valor">kaduribeiro@kadudev.com</span>
+            </a>
+
             <a
               href="https://www.linkedin.com/in/kaduesr/"
               target="_blank"
-              class="contato-item"
-              ><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a
+              rel="noopener noreferrer"
+              class="contato-card"
+              aria-label="Visitar LinkedIn do Kadu"
             >
+              <div class="contato-icon">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <span class="contato-label">LinkedIn</span>
+              <span class="contato-valor">/in/kaduesr</span>
+            </a>
+
             <a
               href="https://github.com/KaduSR"
               target="_blank"
-              class="contato-item"
-              ><i class="fa-brands fa-github"></i><span>GitHub</span></a
+              rel="noopener noreferrer"
+              class="contato-card"
+              aria-label="Visitar GitHub do Kadu"
             >
+              <div class="contato-icon">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </div>
+              <span class="contato-label">GitHub</span>
+              <span class="contato-valor">/KaduSR</span>
+            </a>
+
+            <a
+              href="https://calendly.com/kaduribeiro/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contato-card contato-card-cta"
+              aria-label="Agendar conversa com Kadu"
+            >
+              <div class="contato-icon">
+                <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+              </div>
+              <span class="contato-label">Agendar Conversa</span>
+              <span class="contato-valor">30 min — sem compromisso</span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container footer-container">
-        <div class="footer-sociais">
-          <a href="https://www.linkedin.com/in/kaduesr/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/KaduSR" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+        <div class="footer-brand">
+          <img
+            src="assets/LogotipoPrincipal.svg"
+            alt="Kadu Dev"
+            class="footer-logo"
+            width="120"
+            height="30"
+          />
         </div>
-        <p>&copy; 2024 Kadu Dev. Todos os direitos reservados.</p>
+        <div class="footer-sociais">
+          <a
+            href="https://www.linkedin.com/in/kaduesr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/KaduSR"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a
+            href="mailto:kaduribeiro@kadudev.com"
+            aria-label="Enviar e-mail"
+          >
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="ano-atual"></span> Kadu Dev. Feito com <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i> e rock 'n' roll.
+        </p>
       </div>
     </footer>
+
+    <script>
+      document.getElementById('ano-atual').textContent = new Date().getFullYear();
+
+      const toggle = document.querySelector('.menu-toggle');
+      const navList = document.getElementById('nav-list');
+
+      if (toggle && navList) {
+        toggle.addEventListener('click', () => {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', !expanded);
+          navList.classList.toggle('open');
+          document.body.classList.toggle('menu-open');
+        });
+
+        navList.querySelectorAll('.nav-link, .btn-contato').forEach(link => {
+          link.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            navList.classList.remove('open');
+            document.body.classList.remove('menu-open');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
