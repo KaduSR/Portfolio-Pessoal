@@ -1,0 +1,107 @@
+/* Source of truth: ../00-Fonte-Design-System/DESIGN.md */
+:root {
+  --kd-color-surface: #131313;
+  --kd-color-surface-dim: #131313;
+  --kd-color-surface-bright: #3a3939;
+  --kd-color-surface-container-lowest: #0e0e0e;
+  --kd-color-surface-container-low: #16161a;
+  --kd-color-surface-container: #201f1f;
+  --kd-color-surface-container-high: #2a2a2a;
+  --kd-color-surface-container-highest: #353534;
+  --kd-color-on-surface: #e5e2e1;
+  --kd-color-on-surface-variant: #d4d4d8;
+  --kd-color-inverse-surface: #e5e2e1;
+  --kd-color-inverse-on-surface: #313030;
+  --kd-color-outline: #9c8f7a;
+  --kd-color-outline-variant: #4f4634;
+  --kd-color-surface-tint: #f6be3b;
+  --kd-color-primary: #ffe1aa;
+  --kd-color-on-primary: #402d00;
+  --kd-color-primary-container: #daa520;
+  --kd-color-on-primary-container: #6d4f00;
+  --kd-color-inverse-primary: #7a5900;
+  --kd-color-secondary: #c8c5cd;
+  --kd-color-on-secondary: #303036;
+  --kd-color-secondary-container: #47464d;
+  --kd-color-on-secondary-container: #b7b4bc;
+  --kd-color-tertiary: #d8e6ff;
+  --kd-color-on-tertiary: #01315c;
+  --kd-color-tertiary-container: #a8cbff;
+  --kd-color-on-tertiary-container: #315583;
+  --kd-color-error: #ffb4ab;
+  --kd-color-on-error: #690005;
+  --kd-color-error-container: #93000a;
+  --kd-color-on-error-container: #ffdad6;
+  --kd-color-primary-fixed: #ffdea1;
+  --kd-color-primary-fixed-dim: #f6be3b;
+  --kd-color-on-primary-fixed: #261900;
+  --kd-color-on-primary-fixed-variant: #5c4200;
+  --kd-color-secondary-fixed: #e4e1e9;
+  --kd-color-secondary-fixed-dim: #c8c5cd;
+  --kd-color-on-secondary-fixed: #1b1b21;
+  --kd-color-on-secondary-fixed-variant: #47464d;
+  --kd-color-tertiary-fixed: #d4e3ff;
+  --kd-color-tertiary-fixed-dim: #a6c9fc;
+  --kd-color-on-tertiary-fixed: #001c39;
+  --kd-color-on-tertiary-fixed-variant: #224874;
+  --kd-color-background: #131313;
+  --kd-color-on-background: #e5e2e1;
+  --kd-color-surface-variant: #3a342a;
+  --kd-color-primary-bright: #c4941d;
+  --kd-radius-sm: 0.125rem;
+  --kd-radius-DEFAULT: 0.25rem;
+  --kd-radius-md: 0.375rem;
+  --kd-radius-lg: 0.5rem;
+  --kd-radius-xl: 0.75rem;
+  --kd-radius-full: 9999px;
+  --kd-space-xs: 0.25rem;
+  --kd-space-sm: 0.5rem;
+  --kd-space-md: 1rem;
+  --kd-space-lg: 1.5rem;
+  --kd-space-xl: 2rem;
+  --kd-space-2xl: 3rem;
+  --kd-space-3xl: 5rem;
+
+  --kd-font-headline: "Archivo Narrow", "Arial Narrow", sans-serif;
+  --kd-font-body: "Space Grotesk", Inter, sans-serif;
+  --kd-font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --kd-grid-max: 1200px;
+  --kd-border-ghost: 1px solid color-mix(in srgb, var(--kd-color-outline-variant) 70%, transparent);
+  --kd-focus: 0 0 0 3px color-mix(in srgb, var(--kd-color-primary-fixed-dim) 32%, transparent);
+  --kd-backdrop: blur(14px);
+}
+
+html { color-scheme: dark; }
+body {
+  margin: 0;
+  background: var(--kd-color-background);
+  color: var(--kd-color-on-background);
+  font-family: var(--kd-font-body);
+}
+
+.kd-headline-xl {
+  font-family: var(--kd-font-headline);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+}
+.kd-headline-lg {
+  font-family: var(--kd-font-headline);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.kd-body-lg { font-size: 18px; font-weight: 400; line-height: 28px; }
+.kd-body-md { font-size: 16px; font-weight: 400; line-height: 24px; }
+.kd-label-md {
+  font-family: var(--kd-font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 767px) {
+  .kd-headline-lg { font-size: 28px; line-height: 36px; }
+}

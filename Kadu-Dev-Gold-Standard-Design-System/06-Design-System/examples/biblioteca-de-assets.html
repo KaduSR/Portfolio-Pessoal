@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kadu Dev - Biblioteca de Marca</title>
+  <link rel="stylesheet" href="../kadu-dev.tokens.css">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--kd-color-background);color:var(--kd-color-on-background);font-family:var(--kd-font-body)}
+    main{width:min(1200px,calc(100% - 64px));margin:auto;padding:80px 0}
+    h1{margin:0 0 48px;font-family:var(--kd-font-headline);font-size:72px;line-height:80px;letter-spacing:-.02em}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+    .card{overflow:hidden;background:var(--kd-color-surface-container-low);border:1px solid var(--kd-color-outline-variant);border-radius:var(--kd-radius-lg)}
+    .preview{min-height:360px;padding:16px;display:grid;place-items:center;background:var(--kd-color-surface-container-lowest)}
+    .preview img{width:100%;height:auto;max-height:500px;object-fit:contain}
+    .content{padding:24px}
+    .content span{font:500 12px/16px var(--kd-font-mono);letter-spacing:.05em;color:var(--kd-color-primary-fixed-dim)}
+    .content h2{font:600 32px/40px var(--kd-font-headline);margin:8px 0}
+    .content p{margin:0;color:var(--kd-color-on-surface-variant);font-size:16px;line-height:24px}
+    @media(max-width:767px){main{width:min(100% - 32px,1200px);padding:48px 0}h1{font-size:48px;line-height:52px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Elementos separados.</h1>
+    <div class="grid">
+      
+      <article class="card" data-category="lockup">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-logo-composicao-completa-transparente.png"
+               alt="Logo - Composição completa">
+        </div>
+        <div class="content">
+          <span>LOCKUP</span>
+          <h2>Logo - Composição completa</h2>
+          <p>Composição integral com símbolo, wordmark, descriptor, contato e moldura.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="lockup">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-logo-lockup-principal-transparente.png"
+               alt="Logo - Lockup principal">
+        </div>
+        <div class="content">
+          <span>LOCKUP</span>
+          <h2>Logo - Lockup principal</h2>
+          <p>Símbolo, Kadu Dev e Software Engineer & UX/UI Designer.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="symbol">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-simbolo-k-codigo-transparente.png"
+               alt="Símbolo - K com código">
+        </div>
+        <div class="content">
+          <span>SYMBOL</span>
+          <h2>Símbolo - K com código</h2>
+          <p>Avatar, ícone de aplicativo, favicon ampliado e selo.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="symbol">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-monograma-k-transparente.png"
+               alt="Monograma K">
+        </div>
+        <div class="content">
+          <span>SYMBOL</span>
+          <h2>Monograma K</h2>
+          <p>Marca reduzida sem o glifo de código.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="symbol">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-glifo-codigo-transparente.png"
+               alt="Glifo de código">
+        </div>
+        <div class="content">
+          <span>SYMBOL</span>
+          <h2>Glifo de código</h2>
+          <p>Elemento técnico decorativo e ícone secundário.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="wordmark">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-wordmark-transparente.png"
+               alt="Wordmark Kadu Dev">
+        </div>
+        <div class="content">
+          <span>WORDMARK</span>
+          <h2>Wordmark Kadu Dev</h2>
+          <p>Cabeçalhos, navegação, assinaturas e rodapés.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="descriptor">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-descriptor-software-engineer-ux-ui-transparente.png"
+               alt="Descriptor profissional">
+        </div>
+        <div class="content">
+          <span>DESCRIPTOR</span>
+          <h2>Descriptor profissional</h2>
+          <p>Complemento textual: Software Engineer & UX/UI Designer.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="contact">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-contatos-transparente.png"
+               alt="Linha de contatos">
+        </div>
+        <div class="content">
+          <span>CONTACT</span>
+          <h2>Linha de contatos</h2>
+          <p>Site, usuário social e LinkedIn presentes na composição original.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="element">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-moldura-geometrica-transparente.png"
+               alt="Moldura geométrica dourada">
+        </div>
+        <div class="content">
+          <span>ELEMENT</span>
+          <h2>Moldura geométrica dourada</h2>
+          <p>Recurso decorativo para capas, cards e seções técnicas.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="lockup">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-logo-solucoes-digitais-transparente.png"
+               alt="Logo alternativo - Soluções Digitais">
+        </div>
+        <div class="content">
+          <span>LOCKUP</span>
+          <h2>Logo alternativo - Soluções Digitais</h2>
+          <p>Versão extraída do header premium com o texto Soluções Digitais.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="lockup">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-assinatura-linkedin-transparente.png"
+               alt="Assinatura para LinkedIn">
+        </div>
+        <div class="content">
+          <span>LOCKUP</span>
+          <h2>Assinatura para LinkedIn</h2>
+          <p>KADU DEV, profissão e frase institucional da capa.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="overlay">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-banner-linkedin-overlay-transparente.png"
+               alt="Overlay transparente do banner LinkedIn">
+        </div>
+        <div class="content">
+          <span>OVERLAY</span>
+          <h2>Overlay transparente do banner LinkedIn</h2>
+          <p>Composição gráfica sem o campo escuro do banner.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="overlay">
+        <div class="preview">
+          <img src="../../02-PNG-Transparente/kadu-dev-header-email-overlay-transparente.png"
+               alt="Overlay transparente do header de e-mail">
+        </div>
+        <div class="content">
+          <span>OVERLAY</span>
+          <h2>Overlay transparente do header de e-mail</h2>
+          <p>Circuitos, halo, código e marca sem o campo escuro.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+</body>
+</html>

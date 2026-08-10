@@ -1,0 +1,14 @@
+﻿novo_nome,nome_descritivo,categoria,dimensoes,transparente,uso_recomendado
+kadu-dev-logo-composicao-completa-transparente,Logo - Composição completa,lockup,1024x1024,sim,"Composição integral com símbolo, wordmark, descriptor, contato e moldura."
+kadu-dev-logo-lockup-principal-transparente,Logo - Lockup principal,lockup,645x653,sim,"Símbolo, Kadu Dev e Software Engineer & UX/UI Designer."
+kadu-dev-simbolo-k-codigo-transparente,Símbolo - K com código,symbol,380x439,sim,"Avatar, ícone de aplicativo, favicon ampliado e selo."
+kadu-dev-monograma-k-transparente,Monograma K,symbol,347x439,sim,Marca reduzida sem o glifo de código.
+kadu-dev-glifo-codigo-transparente,Glifo de código,symbol,170x120,sim,Elemento técnico decorativo e ícone secundário.
+kadu-dev-wordmark-transparente,Wordmark Kadu Dev,wordmark,575x150,sim,"Cabeçalhos, navegação, assinaturas e rodapés."
+kadu-dev-descriptor-software-engineer-ux-ui-transparente,Descriptor profissional,descriptor,573x76,sim,Complemento textual: Software Engineer & UX/UI Designer.
+kadu-dev-contatos-transparente,Linha de contatos,contact,734x72,sim,"Site, usuário social e LinkedIn presentes na composição original."
+kadu-dev-moldura-geometrica-transparente,Moldura geométrica dourada,element,1024x1024,sim,"Recurso decorativo para capas, cards e seções técnicas."
+kadu-dev-logo-solucoes-digitais-transparente,Logo alternativo - Soluções Digitais,lockup,350x360,sim,Versão extraída do header premium com o texto Soluções Digitais.
+kadu-dev-assinatura-linkedin-transparente,Assinatura para LinkedIn,lockup,629x280,sim,"KADU DEV, profissão e frase institucional da capa."
+kadu-dev-banner-linkedin-overlay-transparente,Overlay transparente do banner LinkedIn,overlay,1376x768,sim,Composição gráfica sem o campo escuro do banner.
+kadu-dev-header-email-overlay-transparente,Overlay transparente do header de e-mail,overlay,1376x768,sim,"Circuitos, halo, código e marca sem o campo escuro."

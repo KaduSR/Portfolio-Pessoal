@@ -1,0 +1,356 @@
+{
+  "package": "Kadu Dev Gold Standard Design System",
+  "source_archives": [
+    "stitch_kadusr_visual_identity (1)(2).zip",
+    "stitch_kadusr_visual_identity(2).zip"
+  ],
+  "design_system_source": "00-Fonte-Design-System/DESIGN.md",
+  "processing": {
+    "originals_preserved": true,
+    "background_removal": "pixel-mask extraction from raster source",
+    "ai_redraw": false,
+    "automatic_vectorization": false,
+    "svg_method": "transparent PNG embedded in SVG",
+    "recoloring": false
+  },
+  "assets": [
+    {
+      "slug": "kadu-dev-logo-composicao-completa-transparente",
+      "title": "Logo - Composição completa",
+      "category": "lockup",
+      "usage": "Composição integral com símbolo, wordmark, descriptor, contato e moldura.",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 903930,
+        "transparent_percent": 86.21,
+        "partial_alpha_pixels": 69732
+      },
+      "sha256_png": "5b32fce1be482ede5336ec8a121117dfadd1b4dd59ca4c28761ac3439a798496",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-logo-composicao-completa-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-logo-composicao-completa-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-logo-composicao-completa-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-logo-composicao-completa-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-logo-lockup-principal-transparente",
+      "title": "Logo - Lockup principal",
+      "category": "lockup",
+      "usage": "Símbolo, Kadu Dev e Software Engineer & UX/UI Designer.",
+      "dimensions": {
+        "width": 645,
+        "height": 653
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 352611,
+        "transparent_percent": 83.72,
+        "partial_alpha_pixels": 35503
+      },
+      "sha256_png": "bf19f9e16e2553f2d0248bcbd1ac5f00195d6c18d7869bb5cfd44817abea1d21",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-logo-lockup-principal-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-logo-lockup-principal-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-logo-lockup-principal-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-logo-lockup-principal-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-simbolo-k-codigo-transparente",
+      "title": "Símbolo - K com código",
+      "category": "symbol",
+      "usage": "Avatar, ícone de aplicativo, favicon ampliado e selo.",
+      "dimensions": {
+        "width": 380,
+        "height": 439
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 130247,
+        "transparent_percent": 78.08,
+        "partial_alpha_pixels": 15246
+      },
+      "sha256_png": "1f8e6f7d6ece630c48dfdeb700c319f9df7a05b076c4d766b80040c00145a8a9",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-simbolo-k-codigo-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-simbolo-k-codigo-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-simbolo-k-codigo-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-simbolo-k-codigo-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-monograma-k-transparente",
+      "title": "Monograma K",
+      "category": "symbol",
+      "usage": "Marca reduzida sem o glifo de código.",
+      "dimensions": {
+        "width": 343,
+        "height": 437
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 117205,
+        "transparent_percent": 78.19,
+        "partial_alpha_pixels": 12828
+      },
+      "sha256_png": "8ff1b86487f7625a2aee7f8f546b9cafed785d347fd57288b88b55205f9390ac",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-monograma-k-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-monograma-k-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-monograma-k-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-monograma-k-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-glifo-codigo-transparente",
+      "title": "Glifo de código",
+      "category": "symbol",
+      "usage": "Elemento técnico decorativo e ícone secundário.",
+      "dimensions": {
+        "width": 178,
+        "height": 132
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 19907,
+        "transparent_percent": 84.73,
+        "partial_alpha_pixels": 2120
+      },
+      "sha256_png": "c8a6329c3ba537d0ec3a2e140b781f80a69fa2b2f74f5b57a62dace2db474e43",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-glifo-codigo-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-glifo-codigo-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-glifo-codigo-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-glifo-codigo-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-wordmark-transparente",
+      "title": "Wordmark Kadu Dev",
+      "category": "wordmark",
+      "usage": "Cabeçalhos, navegação, assinaturas e rodapés.",
+      "dimensions": {
+        "width": 575,
+        "height": 150
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 63342,
+        "transparent_percent": 73.44,
+        "partial_alpha_pixels": 11259
+      },
+      "sha256_png": "56b0480cad29f21c501bdae51145049c39cedf04859dda5ae4fa484ed61bba37",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-wordmark-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-wordmark-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-wordmark-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-wordmark-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-descriptor-software-engineer-ux-ui-transparente",
+      "title": "Descriptor profissional",
+      "category": "descriptor",
+      "usage": "Complemento textual: Software Engineer & UX/UI Designer.",
+      "dimensions": {
+        "width": 573,
+        "height": 76
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 34894,
+        "transparent_percent": 80.13,
+        "partial_alpha_pixels": 8654
+      },
+      "sha256_png": "6aabe2cd2ece02c737174ac1e714b8dd9a45a8e71c54de1bb8c83723b6970ded",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-descriptor-software-engineer-ux-ui-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-descriptor-software-engineer-ux-ui-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-descriptor-software-engineer-ux-ui-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-descriptor-software-engineer-ux-ui-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-contatos-transparente",
+      "title": "Linha de contatos",
+      "category": "contact",
+      "usage": "Site, usuário social e LinkedIn presentes na composição original.",
+      "dimensions": {
+        "width": 734,
+        "height": 72
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 42022,
+        "transparent_percent": 79.51,
+        "partial_alpha_pixels": 10825
+      },
+      "sha256_png": "7f22e62b28e85d96dc61700e6bbaa149d5422518aac6ec937d8aeab2e99eb8ee",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-contatos-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-contatos-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-contatos-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-contatos-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-moldura-geometrica-transparente",
+      "title": "Moldura geométrica dourada",
+      "category": "element",
+      "usage": "Recurso decorativo para capas, cards e seções técnicas.",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 983330,
+        "transparent_percent": 93.78,
+        "partial_alpha_pixels": 23404
+      },
+      "sha256_png": "4024a5b620af2afdc0e3c876ae54f47f678f5b43af59f280af3a1a39e2790ab6",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-moldura-geometrica-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-moldura-geometrica-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-moldura-geometrica-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-moldura-geometrica-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-logo-solucoes-digitais-transparente",
+      "title": "Logo alternativo - Soluções Digitais",
+      "category": "lockup",
+      "usage": "Versão extraída do header premium com o texto Soluções Digitais.",
+      "dimensions": {
+        "width": 295,
+        "height": 344
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 83386,
+        "transparent_percent": 82.17,
+        "partial_alpha_pixels": 12891
+      },
+      "sha256_png": "1f955cc165753f60cd8a980e7540c5ab70e2ec4af13c4bc2175d1088e748b1c2",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-logo-solucoes-digitais-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-logo-solucoes-digitais-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-logo-solucoes-digitais-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-logo-solucoes-digitais-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-assinatura-linkedin-transparente",
+      "title": "Assinatura para LinkedIn",
+      "category": "lockup",
+      "usage": "KADU DEV, profissão e frase institucional da capa.",
+      "dimensions": {
+        "width": 629,
+        "height": 280
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 148946,
+        "transparent_percent": 84.57,
+        "partial_alpha_pixels": 20564
+      },
+      "sha256_png": "9059b8a9b63fb896e8e9447370b781a29925afe68f1408598d40372e5dc01764",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-assinatura-linkedin-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-assinatura-linkedin-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-assinatura-linkedin-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-assinatura-linkedin-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-banner-linkedin-overlay-transparente",
+      "title": "Overlay transparente do banner LinkedIn",
+      "category": "overlay",
+      "usage": "Composição gráfica sem o campo escuro do banner.",
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1015665,
+        "transparent_percent": 96.11,
+        "partial_alpha_pixels": 34493
+      },
+      "sha256_png": "e0de11b7c8f0dd50c970914650343b151a055f26544069d98719f05546f675c1",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-banner-linkedin-overlay-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-banner-linkedin-overlay-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-banner-linkedin-overlay-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-banner-linkedin-overlay-transparente.pdf"
+      }
+    },
+    {
+      "slug": "kadu-dev-header-email-overlay-transparente",
+      "title": "Overlay transparente do header de e-mail",
+      "category": "overlay",
+      "usage": "Circuitos, halo, código e marca sem o campo escuro.",
+      "dimensions": {
+        "width": 1376,
+        "height": 768
+      },
+      "mode": "RGBA",
+      "transparent": true,
+      "alpha": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 788084,
+        "transparent_percent": 74.57,
+        "partial_alpha_pixels": 217123
+      },
+      "sha256_png": "f52abc172b4a02d208fd54fae1fc22da581829e41cf4d83ac0bdd3c5e2447789",
+      "files": {
+        "png": "02-PNG-Transparente/kadu-dev-header-email-overlay-transparente.png",
+        "webp": "03-WEBP-Lossless-Transparente/kadu-dev-header-email-overlay-transparente.webp",
+        "svg_embedded": "04-SVG-Embedded-Transparente/kadu-dev-header-email-overlay-transparente-embedded.svg",
+        "pdf": "05-PDF-Assets/kadu-dev-header-email-overlay-transparente.pdf"
+      }
+    }
+  ]
+}

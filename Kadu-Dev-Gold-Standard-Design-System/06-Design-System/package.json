@@ -1,0 +1,16 @@
+{
+  "name": "@kadu-dev/gold-standard-brand",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kadu Dev transparent brand assets and Gold Standard Engineering design system.",
+  "files": [
+    "kadu-dev.tokens.css",
+    "kadu-dev.tokens.json",
+    "kadu-dev.tokens.ts",
+    "react"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
