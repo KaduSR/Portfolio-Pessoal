@@ -21,7 +21,7 @@ export function ContactForm() {
       const message = String(data.get("message") ?? "");
       const subject = encodeURIComponent(`Contato do portfólio — ${name}`);
       const body = encodeURIComponent(`Nome: ${name}\nE-mail: ${email}\n\n${message}`);
-      window.location.href = `mailto:kaduribeiro@kadudev.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:contato@kadudev.com?subject=${subject}&body=${body}`;
       return;
     }
 
@@ -49,7 +49,7 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="mb-2 block text-sm font-medium text-zinc-200" htmlFor="name">
+        <label className="mb-2 block text-sm font-medium text-zinc-800 dark:text-zinc-200" htmlFor="name">
           Nome
         </label>
         <input
@@ -58,11 +58,11 @@ export function ContactForm() {
           type="text"
           required
           placeholder="Seu nome"
-          className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-amber-400/50"
+          className="w-full rounded-2xl border border-zinc-300 bg-white px-4 py-3 text-zinc-950 dark:border-white/10 dark:bg-black/30 dark:text-white outline-none transition placeholder:text-zinc-500 focus:border-amber-400/50"
         />
       </div>
       <div>
-        <label className="mb-2 block text-sm font-medium text-zinc-200" htmlFor="email">
+        <label className="mb-2 block text-sm font-medium text-zinc-800 dark:text-zinc-200" htmlFor="email">
           E-mail
         </label>
         <input
@@ -71,11 +71,11 @@ export function ContactForm() {
           type="email"
           required
           placeholder="voce@empresa.com"
-          className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-amber-400/50"
+          className="w-full rounded-2xl border border-zinc-300 bg-white px-4 py-3 text-zinc-950 dark:border-white/10 dark:bg-black/30 dark:text-white outline-none transition placeholder:text-zinc-500 focus:border-amber-400/50"
         />
       </div>
       <div>
-        <label className="mb-2 block text-sm font-medium text-zinc-200" htmlFor="message">
+        <label className="mb-2 block text-sm font-medium text-zinc-800 dark:text-zinc-200" htmlFor="message">
           Mensagem
         </label>
         <textarea
@@ -84,7 +84,7 @@ export function ContactForm() {
           rows={6}
           required
           placeholder="Conte sobre o projeto, objetivo ou vaga."
-          className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none transition placeholder:text-zinc-500 focus:border-amber-400/50"
+          className="w-full rounded-2xl border border-zinc-300 bg-white px-4 py-3 text-zinc-950 dark:border-white/10 dark:bg-black/30 dark:text-white outline-none transition placeholder:text-zinc-500 focus:border-amber-400/50"
         />
       </div>
       <button
@@ -96,13 +96,13 @@ export function ContactForm() {
         {status === "sending" ? "Enviando..." : "Enviar mensagem"}
       </button>
       {status === "success" ? (
-        <p className="text-sm text-emerald-300">Mensagem enviada com sucesso.</p>
+        <p className="text-sm text-emerald-700 dark:text-emerald-300">Mensagem enviada com sucesso.</p>
       ) : null}
       {status === "error" ? (
-        <p className="text-sm text-rose-300">Não foi possível enviar agora. Tente novamente.</p>
+        <p className="text-sm text-rose-700 dark:text-rose-300">Não foi possível enviar agora. Tente novamente.</p>
       ) : null}
-      <p className="text-xs leading-6 text-zinc-400">
-        Se a variável NEXT_PUBLIC_FORMSPREE_ENDPOINT não estiver configurada, o botão abre o email padrão.
+      <p className="text-xs leading-6 text-zinc-600 dark:text-zinc-400">
+        Se a variável NEXT_PUBLIC_FORMSPREE_ENDPOINT não estiver configurada, o botão abre o e-mail para contato@kadudev.com.
       </p>
     </form>
   );

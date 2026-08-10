@@ -12,7 +12,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-200 transition hover:border-amber-400/40 hover:text-amber-300"
+      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-zinc-300 bg-zinc-100 text-zinc-800 transition hover:border-amber-600/50 hover:text-amber-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:border-amber-400/40 dark:hover:text-amber-300"
       aria-label="Alternar tema"
     >
       {mounted && resolvedTheme === "dark" ? (

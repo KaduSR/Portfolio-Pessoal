@@ -11,9 +11,9 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl supports-[backdrop-filter]:bg-zinc-950/65">
+    <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/65 dark:border-white/10 dark:bg-zinc-950/80 dark:supports-[backdrop-filter]:bg-zinc-950/65">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="#home" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <Image src="/logos/logo.svg" alt="Kadu Dev" width={160} height={40} className="h-10 w-auto" />
         </Link>
 
@@ -22,7 +22,7 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-zinc-300 transition hover:text-amber-300"
+              className="text-sm font-medium text-zinc-700 transition hover:text-amber-700 dark:text-zinc-300 dark:hover:text-amber-300"
             >
               {link.label}
             </Link>
@@ -35,7 +35,7 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => setOpen((value) => !value)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-200"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-zinc-100 text-zinc-800 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200"
             aria-label="Abrir menu"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -44,14 +44,14 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-white/10 md:hidden">
+        <div className="border-t border-zinc-200 dark:border-white/10 md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-base font-medium text-zinc-200"
+                className="text-base font-medium text-zinc-800 dark:text-zinc-200"
               >
                 {link.label}
               </Link>
