@@ -1,9 +1,9 @@
 export const siteContent = {
   name: "Kadu Ribeiro",
-  role: "Desenvolvedor Full Stack",
-  headline: "Transformando desafios em soluções de alto impacto com tecnologia e paixão.",
+  role: "Desenvolvedor Full Stack | IA e Automação",
+  headline: "Tecnologia, inteligência e experiência para transformar desafios em produtos digitais.",
   description:
-    "Desenvolvedor Full Stack especializado em React, Next.js, Node.js e TypeScript, com 9 anos de experiência em Telecomunicações, buscando desafios que unam tecnologia e soluções de alto impacto.",
+    "Desenvolvedor Full Stack focado em IA aplicada, automação e produtos digitais, unindo experiência em telecom, visão de negócio e formação em UX para criar soluções úteis e escaláveis.",
   location: "Brasil",
   email: "kaduribeiro@kadudev.com",
 };
@@ -21,11 +21,11 @@ export const highlights = [
   },
   {
     value: "Full Stack",
-    label: "especialidade",
+    label: "web e integrações",
   },
   {
-    value: "Analista Jr.",
-    label: "atual função",
+    value: "IA + UX",
+    label: "foco em evolução",
   },
 ];
 
@@ -46,20 +46,44 @@ export const skills = [
 
 export const journey = [
   {
-    title: "Análise e Desenvolvimento de Sistemas",
-    period: "Fev/2023 — Jun/2026 (Cursando)",
+    title: "UX Design — UX Unicórnio",
+    period: "Cursando",
     description:
-      "Formação acadêmica focada em engenharia de software, arquitetura de sistemas e metodologias ágeis.",
+      "Formação prática em pesquisa, estratégia, experiência do usuário, prototipação e construção de produtos digitais centrados nas pessoas.",
   },
   {
-    title: "Analista de Sistemas Jr.",
-    period: "Ago/2023 — Atualmente",
+    title: "Engenharia de Software — Anhanguera",
+    period: "Fev/2024 — Jun/2027 (Cursando)",
     description:
-      "Desenvolvimento Full Stack com React, Next.js, Node.js, TypeScript e Firebase. Otimização de performance, CI/CD e melhoria de UX/UI.",
+      "Bacharelado com foco em desenvolvimento de software, arquitetura de sistemas e qualidade de produtos digitais.",
   },
   {
-    title: "Técnico em Telecomunicações",
-    period: "Dez/2016 — Ago/2023",
+    title: "Administração — Estácio",
+    period: "Jan/2021 — Out/2024",
+    description:
+      "Bacharelado concluído, fortalecendo visão de negócio, gestão, estratégia e tomada de decisão.",
+  },
+  {
+    title: "Tech Lead — Nexus Flow Tech",
+    period: "Mai/2026 — Atualmente",
+    description:
+      "Liderança técnica de produtos digitais, conectando desenvolvimento Full Stack, IA, automação e decisões de arquitetura.",
+  },
+  {
+    title: "Analista de Sistemas Jr. — Telecom Fiber NET",
+    period: "Dez/2024 — Atualmente",
+    description:
+      "Desenvolvimento Full Stack, integração de serviços, automação de processos, performance e evolução da experiência do usuário.",
+  },
+  {
+    title: "Consultor em Tecnologia — Telecom Fiber NET",
+    period: "Ago/2020 — Dez/2024",
+    description:
+      "Consultoria técnica, desenvolvimento de soluções digitais e transformação de necessidades operacionais em produtos e processos mais eficientes.",
+  },
+  {
+    title: "Técnico em Telecomunicações — Telecom Fiber NET",
+    period: "Nov/2015 — Ago/2020",
     description:
       "Atuação em implantação e manutenção de redes de fibra óptica, suporte técnico e treinamento de equipes.",
   },
@@ -80,7 +104,7 @@ export const projects = [
   {
     title: "Gerenciador de Prompts",
     description:
-      "Ferramenta para criar, salvar e organizar prompts com localStorage e foco em interface simples e rápida.",
+      "Ferramenta para criar, salvar e organizar prompts reutilizáveis, tornando fluxos de trabalho apoiados por IA mais rápidos e consistentes.",
     image: "/images/prompts.png",
     imageAlt: "Tela do projeto Gerenciador de Prompts",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -98,6 +122,17 @@ export const projects = [
     live: "https://fibernettelecom.com/",
     github: "https://github.com/KaduSR/Fiber-NET-Telecom-Web",
     accent: "from-amber-500/20 via-orange-500/10 to-transparent",
+  },
+  {
+    title: "Nexus Flow Tech",
+    description:
+      "Site institucional desenvolvido para apresentar soluções de automação de processos, integração de sistemas, inteligência artificial e gestão orientada por dados.",
+    image: "/images/nexus-flow-tech.png",
+    imageAlt: "Tela do site Nexus Flow Tech",
+    tech: ["Site institucional", "Automação", "IA", "Integrações"],
+    live: "https://nexusflowtech.com.br/",
+    ctaLabel: "Site",
+    accent: "from-violet-500/20 via-cyan-500/10 to-transparent",
   },
 ];
 

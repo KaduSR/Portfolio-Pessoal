@@ -55,7 +55,7 @@ export function Hero() {
               href="#projetos"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-400 px-6 py-3 font-semibold text-zinc-950 transition-all hover:bg-amber-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(251,191,36,0.3)]"
             >
-              Ver projetos
+              Ver projetos e cases
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
@@ -133,9 +133,9 @@ export function Hero() {
             <div className="mt-4 rounded-2xl border border-zinc-200 bg-zinc-100/90 p-4 text-sm text-zinc-700 backdrop-blur-sm dark:border-white/10 dark:bg-black/40 dark:text-zinc-300">
               <p className="flex items-center gap-2 font-semibold text-zinc-950 dark:text-white">
                 <span className="h-2 w-2 rounded-full bg-amber-400" />
-                Stack principal
+                Foco de atuação
               </p>
-              <p className="mt-1 text-zinc-600 dark:text-zinc-400">React • Next.js • TypeScript • Node.js • Tailwind CSS</p>
+              <p className="mt-1 text-zinc-600 dark:text-zinc-400">Full Stack • IA aplicada • Automação • UX de produto</p>
             </div>
           </motion.div>
         </div>
