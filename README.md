@@ -1,4 +1,4 @@
-# Portfólio Pessoal
+# Portfolio Pessoal — Kadu Ribeiro
 
 Portfólio moderno de Kadu Dev, reconstruído com **Next.js**, **TypeScript**, **Tailwind CSS**, **Framer Motion** e **next-themes**.
 

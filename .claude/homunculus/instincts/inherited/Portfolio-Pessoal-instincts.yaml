@@ -1,0 +1,434 @@
+# Instincts generated from https://github.com/KaduSR/Portfolio-Pessoal
+# Generated: 2026-06-22T20:44:06.435Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Portfolio-Pessoal-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: migrate portfolio to Next.js with modern UI
+
+---
+id: Portfolio-Pessoal-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Commit Length
+
+## Action
+
+Keep commit messages concise (~49 characters)
+
+## Evidence
+
+- Average commit message length: 49 chars
+- Based on 1 commits
+
+---
+id: Portfolio-Pessoal-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Portfolio-Pessoal-import-alias
+trigger: "when importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Import Alias
+
+## Action
+
+Use path aliases (@/, ~/) instead of relative imports
+
+## Evidence
+
+- Import analysis shows alias pattern
+- Example: import { x } from '@/lib/x'
+
+---
+id: Portfolio-Pessoal-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Portfolio-Pessoal-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: app, components, lib
+
+---
+id: Portfolio-Pessoal-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: portfolio-pessoal-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: portfolio-pessoal-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: portfolio-pessoal-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: portfolio-pessoal-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: portfolio-pessoal-instinct-import-alias
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Import Alias
+
+## Action
+
+Use alias import style
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: portfolio-pessoal-instinct-export-named
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Export Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: portfolio-pessoal-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Commit Format
+
+## Action
+
+Use conventional commits with 'feat' prefix for features
+
+## Evidence
+
+- Seen in commit 'feat: migrate portfolio to Next.js with modern UI'
+- Pattern in commits.prefixes
+
+---
+id: portfolio-pessoal-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, around 49 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: portfolio-pessoal-instinct-try-catch
+trigger: "When handling errors in code"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Try Catch
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling.style
+
+---
+id: portfolio-pessoal-instinct-no-custom-errors
+trigger: "When considering custom error classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct No Custom Errors
+
+## Action
+
+Do not create custom error classes
+
+## Evidence
+
+- Pattern in errorHandling.customErrorClasses
+
+---
+id: portfolio-pessoal-instinct-no-error-boundaries
+trigger: "When considering React error boundaries"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct No Error Boundaries
+
+## Action
+
+Do not implement error boundaries
+
+## Evidence
+
+- Pattern in errorHandling.errorBoundaries
+
+---
+id: portfolio-pessoal-instinct-no-global-error-handler
+trigger: "When considering a global error handler"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct No Global Error Handler
+
+## Action
+
+Do not implement a global error handler
+
+## Evidence
+
+- Pattern in errorHandling.globalHandler
+
+---
+id: portfolio-pessoal-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Test Location
+
+## Action
+
+Place tests in a separate folder from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: portfolio-pessoal-instinct-folder-structure
+trigger: "When organizing new code or modules"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Folder Structure
+
+## Action
+
+Follow type-based organization within 'src', using 'app', 'components', and 'lib' folders
+
+## Evidence
+
+- Pattern in architecture.folderStructure.srcLayout
+- Pattern in architecture.moduleOrganization
+
+---
+id: portfolio-pessoal-instinct-linkedin-workflow
+trigger: "When configuring CI workflows"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: KaduSR/Portfolio-Pessoal
+---
+
+# Portfolio Pessoal Instinct Linkedin Workflow
+
+## Action
+
+Include a workflow for LinkedIn checks as per '.github/workflows/linkedin-check.yml'
+
+## Evidence
+
+- Pattern in architecture.configFiles
+
