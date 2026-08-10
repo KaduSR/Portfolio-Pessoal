@@ -17,12 +17,12 @@ export function ContactSection() {
           <GlassCard>
             <div className="flex h-full flex-col justify-between gap-8">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-300">
+                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-600/30 bg-emerald-100 px-3 py-1 text-sm text-emerald-700 dark:border-emerald-400/20 dark:bg-emerald-400/10 dark:text-emerald-300">
                   <MessageCircle className="h-4 w-4" />
                   Resposta rápida
                 </div>
-                <h3 className="mt-5 text-2xl font-bold text-white">Envie uma mensagem</h3>
-                <p className="mt-3 text-sm leading-7 text-zinc-300">
+                <h3 className="mt-5 text-2xl font-bold text-zinc-950 dark:text-white">Envie uma mensagem</h3>
+                <p className="mt-3 text-sm leading-7 text-zinc-700 dark:text-zinc-300">
                   Prefere algo direto? Envie um e-mail ou conecte no LinkedIn. Se o projeto pedir uma conversa, eu retorno com contexto e próxima etapa.
                 </p>
               </div>
@@ -34,10 +34,10 @@ export function ContactSection() {
                     href={item.href}
                     target={item.label !== "Email" ? "_blank" : undefined}
                     rel={item.label !== "Email" ? "noreferrer" : undefined}
-                    className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 px-4 py-3 text-sm font-medium text-white transition hover:border-amber-400/40 hover:bg-white/5"
+                    className="flex items-center justify-between rounded-2xl border border-zinc-200 bg-zinc-100 dark:border-white/10 dark:bg-black/20 px-4 py-3 text-sm font-medium text-zinc-950 dark:text-white transition hover:border-amber-400/40 hover:bg-zinc-200/70 dark:hover:bg-white/5"
                   >
                     <span>{item.label}</span>
-                    <ArrowRight className="h-4 w-4 text-amber-300" />
+                    <ArrowRight className="h-4 w-4 text-amber-700 dark:text-amber-300" />
                   </a>
                 ))}
               </div>
