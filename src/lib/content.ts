@@ -17,7 +17,7 @@ export const navLinks = [
 export const highlights = [
   {
     value: "9+",
-    label: "anos em Telecom",
+    label: "anos em Tecnologia",
   },
   {
     value: "Full Stack",
@@ -29,19 +29,48 @@ export const highlights = [
   },
 ];
 
-export const skills = [
-  { name: "React", level: 92, description: "Componentização e UX dinâmica" },
-  { name: "Next.js", level: 88, description: "App Router e SSR" },
-  { name: "TypeScript", level: 90, description: "Código previsível e escalável" },
-  { name: "Node.js", level: 82, description: "APIs e integração de serviços" },
-  { name: "Express.js", level: 78, description: "Backend robusto e escalável" },
-  { name: "Tailwind CSS", level: 94, description: "UI rápida e consistente" },
-  { name: "Firebase", level: 75, description: "Backend como serviço e autenticação" },
-  { name: "Git", level: 86, description: "Fluxo de entrega e versionamento" },
-  { name: "GitHub Actions", level: 70, description: "Automação de CI/CD" },
-  { name: "Docker", level: 70, description: "Containerização de aplicações" },
-  { name: "Vercel", level: 80, description: "Deploy e hospedagem de aplicações" },
-  { name: "Figma", level: 75, description: "Design de interfaces e prototipagem" },
+export const hardSkills = [
+  { name: "React", category: "Frontend", description: "Interfaces componentizadas e experiências interativas" },
+  { name: "Next.js", category: "Frontend", description: "App Router, renderização e exportação estática" },
+  { name: "TypeScript", category: "Frontend", description: "Aplicações tipadas, previsíveis e escaláveis" },
+  { name: "Tailwind CSS", category: "Frontend", description: "Interfaces responsivas e sistemas visuais consistentes" },
+  { name: "Node.js", category: "Backend", description: "APIs, automações e integração de serviços" },
+  { name: "APIs REST", category: "Backend", description: "Consumo e integração entre plataformas" },
+  { name: "Firebase", category: "Backend", description: "Autenticação, dados e serviços gerenciados" },
+  { name: "Automação", category: "Backend", description: "Otimização de processos e fluxos operacionais" },
+  { name: "Git e GitHub", category: "Engenharia", description: "Versionamento e colaboração no desenvolvimento" },
+  { name: "GitHub Actions", category: "Engenharia", description: "Integração, entrega e publicação contínuas" },
+  { name: "Docker", category: "Engenharia", description: "Ambientes reproduzíveis e containerização" },
+  { name: "Figma e UX/UI", category: "Produto", description: "Pesquisa, prototipação e design centrado nas pessoas" },
+  { name: "Design Systems", category: "Produto", description: "Componentes, padrões visuais e consistência de produto" },
+  { name: "Telecom e redes", category: "Domínio", description: "Operações, suporte técnico e fibra óptica" },
+];
+
+export const softSkills = [
+  {
+    name: "Resolução de problemas",
+    description: "Investigo causas, conecto contexto técnico e operacional e proponho soluções viáveis.",
+  },
+  {
+    name: "Comunicação técnica",
+    description: "Traduzo decisões e necessidades entre equipes, negócio e pessoas usuárias.",
+  },
+  {
+    name: "Liderança e colaboração",
+    description: "Alinho prioridades, compartilho conhecimento e contribuo para entregas em equipe.",
+  },
+  {
+    name: "Visão de negócio",
+    description: "Avalio impacto, eficiência e valor antes de transformar demandas em produto.",
+  },
+  {
+    name: "Pensamento crítico",
+    description: "Questiono premissas, comparo alternativas e tomo decisões com base em evidências.",
+  },
+  {
+    name: "Aprendizado contínuo",
+    description: "Evoluo práticas de engenharia, automação, IA e experiência do usuário.",
+  },
 ];
 
 export const journey = [

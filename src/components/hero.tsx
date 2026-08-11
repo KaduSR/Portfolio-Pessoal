@@ -120,13 +120,14 @@ export function Hero() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative w-full max-w-md rounded-[2.5rem] border border-zinc-200 bg-white/80 p-4 shadow-2xl shadow-zinc-300/40 backdrop-blur-2xl dark:border-white/10 dark:bg-white/5 dark:shadow-black/40"
           >
-            <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-zinc-100 dark:border-white/10 dark:bg-zinc-950/80">
+            <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[2rem] border border-zinc-200 bg-zinc-100 p-10 dark:border-white/10 dark:bg-zinc-950/80 sm:p-14">
               <Image
-                src="/images/hero-icon.png"
-                alt="Dragão e guitarra"
-                width={900}
-                height={900}
-                className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
+                src="/logos/kadu-dev-symbol.webp"
+                alt="Símbolo Kadu Dev"
+                width={380}
+                height={444}
+                sizes="(max-width: 640px) 70vw, 380px"
+                className="h-auto max-h-full w-auto max-w-full object-contain transition-transform duration-700 hover:scale-105"
                 priority
               />
             </div>
