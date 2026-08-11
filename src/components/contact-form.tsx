@@ -101,9 +101,6 @@ export function ContactForm() {
       {status === "error" ? (
         <p className="text-sm text-rose-700 dark:text-rose-300">Não foi possível enviar agora. Tente novamente.</p>
       ) : null}
-      <p className="text-xs leading-6 text-zinc-600 dark:text-zinc-400">
-        Se a variável NEXT_PUBLIC_FORMSPREE_ENDPOINT não estiver configurada, o botão abre o e-mail para contato@kadudev.com.
-      </p>
     </form>
   );
 }

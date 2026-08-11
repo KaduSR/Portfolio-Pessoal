@@ -13,8 +13,16 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/65 dark:border-white/10 dark:bg-zinc-950/80 dark:supports-[backdrop-filter]:bg-zinc-950/65">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/logos/logo.svg" alt="Kadu Dev" width={160} height={40} className="h-10 w-auto" />
+        <Link href="/" aria-label="Kadu Dev — início" className="flex items-center">
+          <Image
+            src="/logos/kadu-dev-logo.webp"
+            alt="Kadu Dev — Soluções Digitais"
+            width={295}
+            height={344}
+            sizes="64px"
+            className="h-14 w-auto sm:h-16"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
