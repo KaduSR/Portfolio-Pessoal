@@ -167,28 +167,6 @@ export function AboutSection() {
             </div>
           </GlassCard>
         </div>
-
-        <div className="mt-6">
-          <GlassCard>
-            <h4 className="text-lg font-semibold text-zinc-950 dark:text-white mb-6 flex items-center gap-2">
-              <TrendingUp className="h-5 w-5 text-amber-400" />
-              Resultados Comprovados
-            </h4>
-            <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                { metric: "-30%", label: "tempo de carregamento", desc: "Otimização de performance" },
-                { metric: "+20%", label: "frequência de deploys", desc: "CI/CD com GitHub Actions" },
-                { metric: "+25%", label: "melhoria de UX/UI", desc: "Refatoração de interfaces" },
-              ].map((item) => (
-                <div key={item.label} className="group rounded-2xl border border-zinc-200 bg-zinc-100/80 dark:border-white/[0.06] dark:bg-black/20 p-5 transition-all hover:border-emerald-400/20 hover:bg-zinc-50 dark:hover:bg-white/[0.03]">
-                  <p className="text-3xl font-bold text-emerald-400 transition-all group-hover:scale-110 inline-block">{item.metric}</p>
-                  <p className="text-sm font-medium text-zinc-950 dark:text-white mt-1">{item.label}</p>
-                  <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </GlassCard>
-        </div>
       </div>
     </section>
   );
