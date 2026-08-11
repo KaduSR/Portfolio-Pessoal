@@ -11,8 +11,6 @@
   [![License](https://img.shields.io/badge/Licença-MIT-22C55E?style=for-the-badge)](assets/LICENSE.md)
 </div>
 
-![Prévia do portfólio](public/og/portfolio-preview.png)
-
 ## Sobre o projeto
 
 O **kadudev.com** é meu portfólio profissional. O projeto reúne minha trajetória em tecnologia e telecomunicações, as principais ferramentas com que trabalho e uma seleção de projetos publicados.
