@@ -37,14 +37,27 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "/",
-    images: ["/og/portfolio-preview.png"],
+    siteName: "Kadu Dev",
+    images: [
+      {
+        url: "/og/portfolio-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Kadu Dev — desenvolvimento Full Stack, IA e automação",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kadu Ribeiro | Full Stack, IA e Automação",
     description:
       "Desenvolvimento Full Stack, IA aplicada, automação e UX para criar produtos digitais úteis e escaláveis.",
-    images: ["/og/portfolio-preview.png"],
+    images: [
+      {
+        url: "/og/portfolio-preview.png",
+        alt: "Kadu Dev — desenvolvimento Full Stack, IA e automação",
+      },
+    ],
   },
 };
 

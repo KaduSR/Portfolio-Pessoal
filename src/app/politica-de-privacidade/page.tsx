@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: "Política de Privacidade | Kadu Ribeiro",
   description:
     "Política de Privacidade do site kadudev.com — saiba como coletamos, usamos e protegemos seus dados pessoais, em conformidade com a LGPD.",
+  alternates: { canonical: "/politica-de-privacidade" },
+  openGraph: {
+    title: "Política de Privacidade | Kadu Ribeiro",
+    description:
+      "Saiba como os dados pessoais são tratados no site kadudev.com.",
+    url: "/politica-de-privacidade",
+    type: "website",
+  },
   robots: { index: true, follow: true },
 };
 

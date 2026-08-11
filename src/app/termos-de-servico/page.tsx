@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: "Termos de Serviço | Kadu Ribeiro",
   description:
     "Termos de Serviço do site kadudev.com — regras de uso, propriedade intelectual e limitação de responsabilidade.",
+  alternates: { canonical: "/termos-de-servico" },
+  openGraph: {
+    title: "Termos de Serviço | Kadu Ribeiro",
+    description:
+      "Conheça as regras e condições para o uso do site kadudev.com.",
+    url: "/termos-de-servico",
+    type: "website",
+  },
   robots: { index: true, follow: true },
 };
 
