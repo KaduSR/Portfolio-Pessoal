@@ -1,11 +1,11 @@
 export const siteContent = {
-  name: "Kadu Ribeiro",
-  role: "AI Engineer | AI Integration | LLM Applications",
+  name: "Carlos Eduardo",
+  role: "AI Engineer | AI Integration | LLM Applications | RAG | Intelligent Systems",
   headline: "Integro inteligência artificial a software e processos reais de negócio.",
   description:
     "Profissional de desenvolvimento de software com experiência em aplicações Full Stack, integração de APIs, bancos de dados e automação. Atuo na interseção entre engenharia de software, inteligência artificial e operações de telecomunicações. Desenvolvi funcionalidades de autoatendimento e integrei a Google Gemini API ao Fiber.AI. Atualmente, meu foco é AI Engineering e AI Integration, com base técnica em React, TypeScript, Node.js, PostgreSQL, Docker e infraestrutura de redes.",
   location: "Brasil",
-  email: "kaduribeiro@kadudev.com",
+  email: "carlos847@gmail.com",
 };
 
 export const navLinks = [
@@ -86,7 +86,7 @@ export const journey = [
       "Pesquisa e avaliação de tecnologias de IA e LLMs, análise de oportunidades de automação industrial e contribuição para arquitetura e definição de soluções inteligentes.",
   },
   {
-    title: "Desenvolvimento de software / ERP — Pion G Plus",
+    title: "AI Engineer | Software Engineering — Pion G Plus",
     period: "Ago/2026 — Atualmente",
     description:
       "Desenvolvimento e evolução de funcionalidades de ERP, aplicações Full Stack, APIs REST e persistência de dados com PostgreSQL; atuação com testes, refatoração, Git e Docker.",
