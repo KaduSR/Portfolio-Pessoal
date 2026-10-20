@@ -5,7 +5,7 @@ export const siteContent = {
   description:
     "AI Engineer com base em Software Engineering e experiência em aplicações Full Stack, integração de APIs, bancos de dados e automação. Atuo na interseção entre inteligência artificial, desenvolvimento de software e operações de telecomunicações. Desenvolvi o Fiber.AI com Google Gemini API, recursos de autoatendimento, geração dinâmica de PDFs e consulta de status da rede. Trabalho com JavaScript, TypeScript, React, Next.js, Node.js, APIs REST, PostgreSQL, MongoDB, Docker, Git e CI/CD. Também aplico experiência em telecomunicações, CRM e processos operacionais para transformar necessidades de negócio em soluções digitais.",
   location: "Brasil",
-  email: "carlos847@gmail.com",
+  email: "kaduribeiro@kadudev.com",
 };
 
 export const navLinks = [
@@ -80,16 +80,16 @@ export const softSkills = [
 
 export const journey = [
   {
+    title: "AI Engineer | Software Engineering — Pion G Plus",
+    period: "Ago/2026 — Atualmente",
+    description:
+      "Desenvolvimento e evolução do sistema ERP, aplicações Full Stack com JavaScript, TypeScript, React.js e Node.js, APIs REST e persistência com PostgreSQL. Atuação com testes de software, code reviews, análise de requisitos, refatoração, Git e Docker.",
+  },
+  {
     title: "AI Engineer | AI Integration — Nexus Flow Tech",
     period: "Mai/2026 — Atualmente",
     description:
       "Estruturação técnica de soluções de Inteligência Artificial, pesquisa e avaliação de tecnologias de IA e LLMs, análise de oportunidades de automação industrial, consultoria técnica e contribuição para arquitetura de sistemas inteligentes.",
-  },
-  {
-    title: "AI Engineer | Software Engineering — Pion G Plus",
-    period: "Ago/2026 — Atualmente",
-    description:
-      "Desenvolvimento e evolução do ERP, aplicações Full Stack com JavaScript, TypeScript, React e Node.js, APIs REST e persistência com PostgreSQL. Atuação com testes de software, code reviews, análise de requisitos, refatoração, Git e Docker.",
   },
   {
     title: "DevOps Consultant — Telecom Fiber NET LTDA",
@@ -104,16 +104,16 @@ export const journey = [
       "Experiência técnica em telecomunicações e infraestrutura de fibra óptica.",
   },
   {
-    title: "Engenharia de Software — Anhanguera",
+    title: "Bacharelado, Computer Software Engineering — Anhanguera Educacional",
     period: "Fev/2024 — Jun/2027 (cursando)",
     description:
-      "Bacharelado em andamento com foco em desenvolvimento de software e engenharia de sistemas.",
+      "Formação em Engenharia de Software em andamento.",
   },
   {
-    title: "Administração — Estácio",
+    title: "Bacharelado em Administração — Estácio",
     period: "Jan/2021 — Out/2024",
     description:
-      "Bacharelado concluído, complementando a base técnica com conhecimentos de gestão e negócios.",
+      "Formação em Administração concluída em 2024.",
   },
 ];
 
@@ -169,7 +169,7 @@ export const contactLinks = [
   },
   {
     label: "Email",
-    href: "mailto:carlos847@gmail.com",
+    href: "mailto:kaduribeiro@kadudev.com",
   },
 ];
 
