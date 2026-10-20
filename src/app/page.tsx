@@ -37,7 +37,7 @@ const structuredData = {
       url: "https://kadudev.com",
       name: "Kadu Dev",
       description: siteContent.description,
-      inLanguage: ["pt-BR", "en"],
+      inLanguage: "pt-BR",
       publisher: { "@id": "https://kadudev.com/#person" },
     },
   ],
