@@ -1,9 +1,9 @@
 export const siteContent = {
   name: "Kadu Ribeiro",
-  role: "Desenvolvedor Full Stack | IA e Automação",
-  headline: "Tecnologia, inteligência e experiência para transformar desafios em produtos digitais.",
+  role: "AI Engineer | AI Integration | Full Stack Development",
+  headline: "Construo software útil conectando engenharia, inteligência artificial e negócio.",
   description:
-    "Desenvolvedor Full Stack focado em IA aplicada, automação e produtos digitais, unindo experiência em telecom, visão de negócio e formação em UX para criar soluções úteis e escaláveis.",
+    "Profissional de software com experiência em desenvolvimento Full Stack, integração de APIs, automação e IA aplicada. Combino engenharia de software, experiência operacional em telecomunicações e visão de negócio para transformar problemas reais em soluções digitais.",
   location: "Brasil",
   email: "kaduribeiro@kadudev.com",
 };
@@ -16,8 +16,8 @@ export const navLinks = [
 
 export const highlights = [
   {
-    value: "9+",
-    label: "anos em Tecnologia",
+    value: "10+",
+    label: "anos em tecnologia e operações",
   },
   {
     value: "Full Stack",
@@ -187,5 +187,93 @@ export const contactLinks = [
   {
     label: "Email",
     href: "mailto:kaduribeiro@kadudev.com",
+  },
+];
+
+
+export const certifications = [
+  {
+    title: "MBA em Inteligência Artificial e Gestão de Pessoas",
+    issuer: "Faculdade Bookplay",
+    workload: "480 horas",
+    type: "Pós-graduação",
+    category: "IA",
+  },
+  {
+    title: "MBA em Web Design",
+    issuer: "Faculdade Bookplay",
+    workload: "560 horas",
+    type: "Pós-graduação",
+    category: "Design & Produto",
+  },
+  {
+    title: "Pós-graduação em Gestão Empresarial",
+    issuer: "Faculdade Bookplay",
+    workload: "360 horas",
+    type: "Pós-graduação",
+    category: "Negócios",
+  },
+  {
+    title: "Java e IA para Iniciantes com a NTT DATA",
+    issuer: "DIO / NTT DATA",
+    workload: "1 hora",
+    type: "Curso",
+    category: "IA & Desenvolvimento",
+  },
+  {
+    title: "Fundamentos de Engenharia de Dados",
+    issuer: "LinkedIn Learning",
+    workload: "1h 5min",
+    type: "Curso",
+    category: "Dados",
+  },
+  {
+    title: "Introdução à Inteligência Artificial",
+    issuer: "LinkedIn Learning",
+    workload: "1h 42min",
+    type: "Curso",
+    category: "IA",
+  },
+  {
+    title: "Fundamentos de React",
+    issuer: "LinkedIn Learning",
+    workload: "2h 38min",
+    type: "Curso",
+    category: "Frontend",
+  },
+  {
+    title: "Fundamentos de HTTP para Desenvolvedores",
+    issuer: "LinkedIn Learning",
+    workload: "1h 38min",
+    type: "Curso",
+    category: "Backend & APIs",
+  },
+  {
+    title: "Full Stack Weekend — SaaS do zero ao deploy",
+    issuer: "Full Stack Weekend",
+    workload: "12 horas",
+    type: "Workshop",
+    category: "Full Stack",
+  },
+  {
+    title: "Discover",
+    issuer: "Rocketseat",
+    workload: "12 horas",
+    type: "Formação",
+    category: "Desenvolvimento Web",
+  },
+  {
+    title: "Java Essencial e Desenvolvimento Colaborativo com Git",
+    issuer: "DIO",
+    workload: "9 horas",
+    type: "Curso",
+    category: "Java & Engenharia",
+  },
+  {
+    title: "Versionamento de Código com Git e GitHub",
+    issuer: "DIO",
+    workload: "2 horas",
+    type: "Curso",
+    category: "Engenharia",
   },
 ];
