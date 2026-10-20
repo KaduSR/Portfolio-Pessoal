@@ -169,7 +169,7 @@ export const contactLinks = [
   },
   {
     label: "Email",
-    href: "mailto:kaduribeiro@kadudev.com",
+    href: "mailto:carlos847@gmail.com",
   },
 ];
 
