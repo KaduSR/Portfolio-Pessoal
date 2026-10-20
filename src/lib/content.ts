@@ -18,7 +18,7 @@ export const navLinks = [
 export const highlights = [
   {
     value: "10+",
-    label: "anos em tecnologia e operações",
+    label: "anos em telecom e operações",
   },
   {
     value: "Full Stack",
@@ -36,6 +36,10 @@ export const hardSkills = [
   { name: "TypeScript", category: "Frontend", description: "Aplicações tipadas, previsíveis e escaláveis" },
   { name: "Tailwind CSS", category: "Frontend", description: "Interfaces responsivas e sistemas visuais consistentes" },
   { name: "Node.js", category: "Backend", description: "APIs, automações e integração de serviços" },
+  { name: "PostgreSQL", category: "Dados", description: "Modelagem relacional e persistência de dados" },
+  { name: "Prisma ORM", category: "Dados", description: "Acesso tipado ao banco e modelagem de entidades" },
+  { name: "Google Gemini API", category: "IA", description: "Integração de IA generativa em aplicações web" },
+  { name: "jsPDF", category: "Integrações", description: "Geração dinâmica de documentos PDF" },
   { name: "APIs REST", category: "Backend", description: "Consumo e integração entre plataformas" },
   { name: "Firebase", category: "Backend", description: "Autenticação, dados e serviços gerenciados" },
   { name: "Automação", category: "Backend", description: "Otimização de processos e fluxos operacionais" },
@@ -100,7 +104,7 @@ export const journey = [
       "Liderança técnica de produtos digitais, conectando desenvolvimento Full Stack, IA, automação e decisões de arquitetura.",
   },
   {
-    title: "Desenvolvimento de Sistemas — Telecom Fiber NET",
+    title: "Consultoria de TI e Desenvolvimento — Telecom Fiber NET",
     period: "Dez/2024 — Atualmente",
     description:
       "Desenvolvimento Full Stack, integração de serviços, automação de processos, performance e evolução da experiência do usuário.",
@@ -152,10 +156,10 @@ export const projects = [
     year: "2025",
     summary: "Presença digital para uma operação de telecom",
     description:
-      "Aplicação web para apresentar serviços, planos e canais de atendimento da Fiber NET Telecom em uma experiência responsiva.",
+      "Evolução da plataforma digital e do portal de autoatendimento da Fiber NET. O trabalho inclui interface responsiva em React e TypeScript, integração com Google Gemini API no módulo Fiber.AI, emissão de segunda via com PDF dinâmico e monitoramento do status da rede. O foco é transformar tarefas operacionais em fluxos digitais mais simples para o cliente.",
     image: "/images/fibernet.png",
     imageAlt: "Tela do site Fiber NET Telecom",
-    tech: ["React", "Next.js", "Node.js", "TypeScript", "Firebase"],
+    tech: ["React", "TypeScript", "Vite", "Google Gemini API", "jsPDF"],
     live: "https://fibernettelecom.com/",
     github: "https://github.com/KaduSR/Fiber-NET-Telecom-Web",
     accent: "from-amber-500/20 via-orange-500/10 to-transparent",
