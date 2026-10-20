@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
+import { CertificationsSection } from "@/components/certifications-section";
 import { Hero } from "@/components/hero";
 import { ProjectsSection } from "@/components/projects-section";
 import { Reveal } from "@/components/reveal";
@@ -16,7 +17,7 @@ const structuredData = {
       name: siteContent.name,
       url: "https://kadudev.com",
       image: "https://kadudev.com/images/profile-suit.jpg",
-      jobTitle: "Desenvolvedor Full Stack",
+      jobTitle: "AI Engineer | Full Stack Developer",
       description: siteContent.description,
       email: `mailto:${siteContent.email}`,
       sameAs: contactLinks
@@ -36,7 +37,7 @@ const structuredData = {
       url: "https://kadudev.com",
       name: "Kadu Dev",
       description: siteContent.description,
-      inLanguage: "pt-BR",
+      inLanguage: ["pt-BR", "en"],
       publisher: { "@id": "https://kadudev.com/#person" },
     },
   ],
@@ -54,8 +55,9 @@ export default function Home() {
         <Reveal>
           <Hero />
         </Reveal>
-        <AboutSection />
         <ProjectsSection />
+        <AboutSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
       <SiteFooter />
