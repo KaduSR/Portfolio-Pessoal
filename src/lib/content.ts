@@ -178,7 +178,7 @@ export const certifications = [
   {
     title: "Navegação com Expo Router — React Native",
     issuer: "LinkedIn Learning",
-    workload: "Não informado no currículo",
+    workload: "",
     type: "Curso",
     category: "Desenvolvimento mobile",
   },
