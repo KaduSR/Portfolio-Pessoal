@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Github, Code2 } from "lucide-react";
 import { projects } from "@/lib/content";
 import { GlassCard, SectionHeading } from "@/components/section-heading";
@@ -85,7 +86,7 @@ export function ProjectsSection() {
             </GlassCard>
           ))}
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
             href="https://github.com/KaduSR?tab=repositories"
             target="_blank"
@@ -95,6 +96,13 @@ export function ProjectsSection() {
             Ver todos os projetos no GitHub
             <ArrowUpRight className="h-4 w-4" />
           </a>
+          <Link
+            href="/templates"
+            className="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-400/10 px-5 py-2.5 text-sm font-semibold text-zinc-900 transition hover:border-amber-500 hover:bg-amber-400/20 dark:text-white"
+          >
+            Explorar templates demonstrativos
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>
