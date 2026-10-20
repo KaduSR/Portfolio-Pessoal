@@ -25,8 +25,8 @@ export const highlights = [
     label: "web e integrações",
   },
   {
-    value: "IA + UX",
-    label: "foco em evolução",
+    value: "IA + APIs",
+    label: "integração de sistemas",
   },
 ];
 
@@ -178,7 +178,7 @@ export const certifications = [
   {
     title: "Navegação com Expo Router — React Native",
     issuer: "LinkedIn Learning",
-    workload: "Carga horária não informada",
+    workload: "",
     type: "Curso",
     category: "Desenvolvimento mobile",
   },
