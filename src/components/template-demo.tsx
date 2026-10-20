@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ArrowLeft, ArrowRight, Check, ChevronDown, CircleHelp, Code2, ExternalLink, Search, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, CircleHelp, Code2, ExternalLink, Search, ShoppingBag, Sparkles } from "lucide-react";
 import type { SiteTemplate } from "@/lib/templates";
 
 type Props = { template: SiteTemplate };
