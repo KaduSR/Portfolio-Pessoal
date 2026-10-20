@@ -86,7 +86,7 @@ export function AboutSection() {
                   <div>
                     <p className="text-sm font-medium text-zinc-950 dark:text-white">Experiência</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">AI Engineer | AI Integration • Nexus Flow Tech • Mai/2026 — Atualmente</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Desenvolvimento de software / ERP • Pion G Plus • Ago/2026 — Atualmente</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400">AI Engineer | Software Engineering • Pion G Plus • Ago/2026 — Atualmente</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">DevOps Consultant • Telecom Fiber NET • Nov/2020 — Out/2026</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">Técnico Instalador • Fiber.net • Set/2015 — Out/2020</p>
                   </div>
