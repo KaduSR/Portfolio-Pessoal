@@ -25,8 +25,8 @@ export const highlights = [
     label: "web e integrações",
   },
   {
-    value: "IA + UX",
-    label: "foco em evolução",
+    value: "IA + APIs",
+    label: "integração de sistemas",
   },
 ];
 
@@ -169,7 +169,7 @@ export const contactLinks = [
   },
   {
     label: "Email",
-    href: "mailto:kaduribeiro@kadudev.com",
+    href: "mailto:carlos847@gmail.com",
   },
 ];
 
