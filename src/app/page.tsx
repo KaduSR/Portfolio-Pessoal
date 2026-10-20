@@ -55,8 +55,8 @@ export default function Home() {
         <Reveal>
           <Hero />
         </Reveal>
-        <AboutSection />
         <ProjectsSection />
+        <AboutSection />
         <CertificationsSection />
         <ContactSection />
       </main>
