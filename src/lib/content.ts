@@ -165,19 +165,6 @@ export const projects = [
     accent: "from-amber-500/20 via-orange-500/10 to-transparent",
   },
   {
-    title: "Aparatus Barbershop",
-    category: "Full Stack",
-    year: "2025",
-    summary: "Sistema de agendamento com painel administrativo",
-    description:
-      "Aplicação full stack com Next.js 14, React e TypeScript. Inclui autenticação e autorização com NextAuth.js, persistência PostgreSQL via Prisma ORM, painel administrativo, disponibilidade de horários e rotinas de agendamento. O case destaca a arquitetura e o fluxo de ponta a ponta; a imagem de capa será substituída por uma captura real do projeto quando disponível.",
-    image: "",
-    imageAlt: "Capa editorial do estudo de caso Aparatus Barbershop",
-    tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth.js", "Stripe"],
-    github: "https://github.com/KaduSR",
-    accent: "from-amber-500/20 via-yellow-500/10 to-transparent",
-  },
-  {
     title: "Nexus Flow Tech",
     category: "Site institucional",
     year: "2026",
