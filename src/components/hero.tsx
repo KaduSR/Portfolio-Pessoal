@@ -12,7 +12,7 @@ export function Hero() {
       {/* Premium Background Glows */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-amber-500/10 blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-rose-500/10 blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-amber-400/10 blur-[120px]" />
       </div>
 
       <div className="mx-auto grid w-full max-w-7xl gap-14 px-4 pb-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
@@ -21,9 +21,9 @@ export function Hero() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex w-fit items-center gap-2 rounded-full border border-emerald-600/30 bg-emerald-100 px-4 py-2 text-sm text-emerald-700 backdrop-blur-sm dark:border-emerald-400/20 dark:bg-emerald-400/10 dark:text-emerald-300"
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-amber-500/30 bg-amber-100/70 px-4 py-2 text-sm text-amber-900 backdrop-blur-sm dark:border-amber-300/20 dark:bg-amber-400/10 dark:text-amber-200"
           >
-            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="h-2 w-2 rounded-full bg-amber-400" />
             {siteContent.role} • {siteContent.location}
           </motion.div>
 
