@@ -87,7 +87,7 @@ export function AboutSection() {
                   <div>
                     <p className="text-sm font-medium text-zinc-950 dark:text-white">Experiência</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">Tech Lead • Nexus Flow Tech • Mai/2026 — Atualmente</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Analista de Sistemas Jr. • Telecom Fiber NET • Dez/2024 — Atualmente</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Desenvolvimento de Sistemas • Telecom Fiber NET • Dez/2024 — Atualmente</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">Consultor em Tecnologia • Telecom Fiber NET • Ago/2020 — Dez/2024</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">Técnico em Telecomunicações • Telecom Fiber NET • Nov/2015 — Ago/2020</p>
                   </div>
