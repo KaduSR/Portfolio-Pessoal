@@ -50,7 +50,7 @@ export function AboutSection() {
         <SectionHeading
           eyebrow="Sobre mim"
           title="Código, automação e UX conectados ao negócio."
-          description="Uno desenvolvimento Full Stack, integração de IA e experiência em telecomunicações. Desenvolvo soluções digitais com APIs, dados e automação, conectando necessidades operacionais a software."
+          description="Atuo na interseção entre AI Engineering, integração de LLMs, desenvolvimento Full Stack e operações de telecomunicações. Desenvolvo aplicações, APIs e automações orientadas a dados, conectando necessidades operacionais e de negócio a soluções digitais."
         />
 
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">

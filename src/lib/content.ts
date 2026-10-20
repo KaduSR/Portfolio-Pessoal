@@ -1,9 +1,9 @@
 export const siteContent = {
   name: "Carlos Eduardo",
   role: "AI Engineer | AI Integration | LLM Applications | RAG | Intelligent Systems",
-  headline: "Integro inteligência artificial a software e processos reais de negócio.",
+  headline: "AI Engineering, integração de LLMs e desenvolvimento Full Stack para problemas reais de negócio.",
   description:
-    "Profissional de desenvolvimento de software com experiência em aplicações Full Stack, integração de APIs, bancos de dados e automação. Atuo na interseção entre engenharia de software, inteligência artificial e operações de telecomunicações. Desenvolvi funcionalidades de autoatendimento e integrei a Google Gemini API ao Fiber.AI. Atualmente, meu foco é AI Engineering e AI Integration, com base técnica em React, TypeScript, Node.js, PostgreSQL, Docker e infraestrutura de redes.",
+    "AI Engineer com base em Software Engineering e experiência em aplicações Full Stack, integração de APIs, bancos de dados e automação. Atuo na interseção entre inteligência artificial, desenvolvimento de software e operações de telecomunicações. Desenvolvi o Fiber.AI com Google Gemini API, recursos de autoatendimento, geração dinâmica de PDFs e consulta de status da rede. Trabalho com JavaScript, TypeScript, React, Next.js, Node.js, APIs REST, PostgreSQL, MongoDB, Docker, Git e CI/CD. Também aplico experiência em telecomunicações, CRM e processos operacionais para transformar necessidades de negócio em soluções digitais.",
   location: "Brasil",
   email: "carlos847@gmail.com",
 };
@@ -83,19 +83,19 @@ export const journey = [
     title: "AI Engineer | AI Integration — Nexus Flow Tech",
     period: "Mai/2026 — Atualmente",
     description:
-      "Pesquisa e avaliação de tecnologias de IA e LLMs, análise de oportunidades de automação industrial e contribuição para arquitetura e definição de soluções inteligentes.",
+      "Estruturação técnica de soluções de Inteligência Artificial, pesquisa e avaliação de tecnologias de IA e LLMs, análise de oportunidades de automação industrial, consultoria técnica e contribuição para arquitetura de sistemas inteligentes.",
   },
   {
     title: "AI Engineer | Software Engineering — Pion G Plus",
     period: "Ago/2026 — Atualmente",
     description:
-      "Desenvolvimento e evolução de funcionalidades de ERP, aplicações Full Stack, APIs REST e persistência de dados com PostgreSQL; atuação com testes, refatoração, Git e Docker.",
+      "Desenvolvimento e evolução do ERP, aplicações Full Stack com JavaScript, TypeScript, React e Node.js, APIs REST e persistência com PostgreSQL. Atuação com testes de software, code reviews, análise de requisitos, refatoração, Git e Docker.",
   },
   {
     title: "DevOps Consultant — Telecom Fiber NET LTDA",
     period: "Nov/2020 — Out/2026",
     description:
-      "Desenvolvimento de plataforma digital, integração da Google Gemini API no Fiber.AI, autoatendimento, geração dinâmica de PDFs e atuação com infraestrutura de fibra óptica, BGP, CGNAT e BRAS.",
+      "Desenvolvimento da plataforma digital com React, TypeScript e Vite; integração da Google Gemini API no Fiber.AI; autoatendimento, geração dinâmica de PDFs e monitoramento de rede. Experiência em infraestrutura de fibra óptica, BGP, CGNAT e BRAS, conectando software, automação e operação. O currículo registra indicação orgânica responsável por 90% das novas vendas.",
   },
   {
     title: "Técnico Instalador — Fiber.net",
@@ -122,9 +122,9 @@ export const projects = [
     title: "Plataforma Digital Fiber-NET Telecom",
     category: "Full Stack + AI Integration",
     year: "2025–2026",
-    summary: "Autoatendimento, IA aplicada e serviços digitais",
+    summary: "Plataforma Full Stack com Fiber.AI e autoatendimento",
     description:
-      "Plataforma desenvolvida com React, TypeScript e Vite. Inclui Fiber.AI integrado à Google Gemini API, funcionalidades de autoatendimento, geração dinâmica de PDFs e consulta do status da rede.",
+      "Plataforma digital desenvolvida ponta a ponta com React, TypeScript e Vite. Integra o Fiber.AI via Google Gemini API, funcionalidades de autoatendimento, segunda via de faturas, geração dinâmica de PDFs e consulta do status da rede em tempo real, com interfaces responsivas em Tailwind CSS.",
     image: "/images/fibernet.png",
     imageAlt: "Tela do site Fiber NET Telecom",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Google Gemini API", "jsPDF"],
@@ -136,9 +136,9 @@ export const projects = [
     title: "Aparatus Barbershop",
     category: "Projeto pessoal · Full Stack",
     year: "2025",
-    summary: "Gestão de agendamentos e operações",
+    summary: "Aplicação Full Stack para agendamentos e administração",
     description:
-      "Aplicação Full Stack descrita no currículo, com backend baseado em Server Actions, modelagem de dados relacional, autenticação e autorização, dashboard administrativo, rotinas de agendamento e integração de pagamentos.",
+      "Aplicação Full Stack para gestão de agendamentos e operações, construída com Next.js, React e TypeScript. Utiliza Server Actions, Prisma ORM e PostgreSQL, autenticação e autorização com NextAuth.js, dashboard administrativo, rotinas de agendamento e integração de pagamentos via Stripe.",
     image: "/images/myflix.webp",
     imageAlt: "Imagem ilustrativa temporária para o projeto Aparatus Barbershop",
     tech: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "NextAuth.js", "Stripe"],
@@ -148,9 +148,9 @@ export const projects = [
     title: "Aplicação Web",
     category: "Projeto pessoal · Frontend",
     year: "2025",
-    summary: "Interface responsiva com integração de API",
+    summary: "Frontend responsivo com componentes reutilizáveis",
     description:
-      "Projeto de interface responsiva desenvolvido com React e TypeScript, componentes reutilizáveis, integração com API externa e estilização com Tailwind CSS.",
+      "Aplicação web com interface responsiva desenvolvida em React e TypeScript, componentes reutilizáveis, integração com API externa e estilização com Tailwind CSS.",
     image: "/images/prompts.png",
     imageAlt: "Imagem ilustrativa temporária para o projeto Aplicação Web",
     tech: ["React", "TypeScript", "Tailwind CSS", "API REST"],

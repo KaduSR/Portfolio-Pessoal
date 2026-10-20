@@ -9,9 +9,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kadudev.com"),
-  title: "Kadu Ribeiro | Full Stack, IA e Automação",
+  title: "Kadu Ribeiro | AI Engineer, AI Integration e Full Stack",
   description:
-    "Desenvolvedor Full Stack focado em IA aplicada, automação e produtos digitais, com visão de negócio e formação em UX Design.",
+    "AI Engineer com foco em integração de IA, aplicações LLM, RAG, desenvolvimento Full Stack, APIs, automação e sistemas inteligentes.",
   keywords: [
     "Kadu Ribeiro",
     "Desenvolvedor Full Stack",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kadu Ribeiro | Full Stack, IA e Automação",
     description:
-      "Desenvolvimento Full Stack, IA aplicada, automação e UX para criar produtos digitais úteis e escaláveis.",
+      "AI Engineering, integração de IA, aplicações Full Stack, APIs e automação para resolver problemas reais de negócio.",
     type: "website",
     locale: "pt_BR",
     url: "/",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: "/og/portfolio-preview.png",
         width: 1200,
         height: 630,
-        alt: "Kadu Dev — desenvolvimento Full Stack, IA e automação",
+        alt: "Kadu Dev — AI Engineering, integração de IA e desenvolvimento Full Stack",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kadu Ribeiro | Full Stack, IA e Automação",
     description:
-      "Desenvolvimento Full Stack, IA aplicada, automação e UX para criar produtos digitais úteis e escaláveis.",
+      "AI Engineering, integração de IA, aplicações Full Stack, APIs e automação para resolver problemas reais de negócio.",
     images: [
       {
         url: "/og/portfolio-preview.png",
