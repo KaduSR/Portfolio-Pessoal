@@ -9,7 +9,7 @@ export function CertificationsSection() {
         <SectionHeading
           eyebrow="Formação contínua"
           title="Formação e certificações"
-          description="Pós-graduações e cursos complementares em inteligência artificial, desenvolvimento de software, dados, design e gestão. As cargas horárias são exibidas conforme os certificados enviados."
+          description="Curso complementar explicitamente listado no currículo enviado. A carga horária não foi informada no documento."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((item) => {
