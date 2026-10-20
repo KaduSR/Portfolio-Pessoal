@@ -17,7 +17,7 @@ const structuredData = {
       name: siteContent.name,
       url: "https://kadudev.com",
       image: "https://kadudev.com/images/profile-suit.jpg",
-      jobTitle: "AI Engineer | Full Stack Developer",
+      jobTitle: "AI Engineer | AI Integration",
       description: siteContent.description,
       email: `mailto:${siteContent.email}`,
       sameAs: contactLinks
@@ -37,7 +37,7 @@ const structuredData = {
       url: "https://kadudev.com",
       name: "Kadu Dev",
       description: siteContent.description,
-      inLanguage: ["pt-BR", "en"],
+      inLanguage: "pt-BR",
       publisher: { "@id": "https://kadudev.com/#person" },
     },
   ],

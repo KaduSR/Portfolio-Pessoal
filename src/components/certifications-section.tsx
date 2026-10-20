@@ -9,7 +9,7 @@ export function CertificationsSection() {
         <SectionHeading
           eyebrow="Formação contínua"
           title="Formação e certificações"
-          description="Pós-graduações e cursos complementares em inteligência artificial, desenvolvimento de software, dados, design e gestão. As cargas horárias são exibidas conforme os certificados enviados."
+          description="Curso complementar listado no currículo profissional."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((item) => {
@@ -31,8 +31,12 @@ export function CertificationsSection() {
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{item.issuer}</p>
                   <div className="mt-auto flex flex-wrap items-center gap-2 pt-5 text-xs text-zinc-600 dark:text-zinc-400">
                     <span>{item.type}</span>
-                    <span aria-hidden="true">·</span>
-                    <span>{item.workload}</span>
+                    {item.workload ? (
+                      <>
+                        <span aria-hidden="true">·</span>
+                        <span>{item.workload}</span>
+                      </>
+                    ) : null}
                   </div>
                 </article>
               </GlassCard>

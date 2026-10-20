@@ -136,7 +136,7 @@ export function Hero() {
                 <span className="h-2 w-2 rounded-full bg-amber-400" />
                 Foco de atuação
               </p>
-              <p className="mt-1 text-zinc-600 dark:text-zinc-400">Full Stack • IA aplicada • Automação • UX de produto</p>
+              <p className="mt-1 text-zinc-600 dark:text-zinc-400">AI Integration • LLMs • Full Stack • Automação</p>
             </div>
           </motion.div>
         </div>

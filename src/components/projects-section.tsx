@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, Code2 } from "lucide-react";
 import { projects } from "@/lib/content";
 import { GlassCard, SectionHeading } from "@/components/section-heading";
 
@@ -18,14 +18,21 @@ export function ProjectsSection() {
             <GlassCard key={project.title}>
               <article className="flex h-full flex-col">
                 <div className={`rounded-[1.25rem] border border-zinc-200 bg-gradient-to-br p-3 dark:border-white/10 ${project.accent}`}>
-                  <div className="relative aspect-[16/10] overflow-hidden rounded-[1rem] bg-zinc-950">
-                    <Image
-                      src={project.image}
-                      alt={project.imageAlt}
-                      fill
-                      sizes="(max-width: 768px) calc(100vw - 4rem), (max-width: 1280px) calc(50vw - 4rem), 576px"
-                      className="object-cover transition duration-500 hover:scale-105"
-                    />
+                  <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden rounded-[1rem] bg-zinc-950">
+                    {project.title === "Plataforma Digital Fiber-NET Telecom" ? (
+                      <Image
+                        src={project.image}
+                        alt={project.imageAlt}
+                        fill
+                        sizes="(max-width: 768px) calc(100vw - 4rem), (max-width: 1280px) calc(50vw - 4rem), 576px"
+                        className="object-cover transition duration-500 hover:scale-105"
+                      />
+                    ) : (
+                      <div className="flex flex-col items-center gap-3 text-amber-300">
+                        <Code2 aria-hidden="true" className="h-12 w-12" />
+                        <span className="font-mono text-xs uppercase tracking-[0.2em]">Projeto de software</span>
+                      </div>
+                    )}
                     <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-zinc-950/85 px-3 py-1 font-mono text-xs text-white backdrop-blur">
                       {String(index + 1).padStart(2, "0")}
                     </span>

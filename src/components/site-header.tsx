@@ -44,7 +44,9 @@ export function SiteHeader() {
             type="button"
             onClick={() => setOpen((value) => !value)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300 bg-zinc-100 text-zinc-800 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200"
-            aria-label="Abrir menu"
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -52,7 +54,7 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-zinc-200 dark:border-white/10 md:hidden">
+        <div id="mobile-navigation" className="border-t border-zinc-200 dark:border-white/10 md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
             {navLinks.map((link) => (
               <Link

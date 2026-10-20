@@ -50,7 +50,7 @@ export function AboutSection() {
         <SectionHeading
           eyebrow="Sobre mim"
           title="Código, automação e UX conectados ao negócio."
-          description="Uno desenvolvimento Full Stack, IA aplicada e experiência em telecom para transformar processos em produtos digitais. No UX Unicórnio, amplio esse repertório com pesquisa, estratégia e design centrado nas pessoas."
+          description="Uno desenvolvimento Full Stack, integração de IA e experiência em telecomunicações. Desenvolvo soluções digitais com APIs, dados e automação, conectando necessidades operacionais a software."
         />
 
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
@@ -79,17 +79,16 @@ export function AboutSection() {
                     <p className="text-sm font-medium text-zinc-950 dark:text-white">Formação</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">Engenharia de Software • Anhanguera (2024–2027)</p>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">Administração • Estácio (Concluído em 2024)</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">UX Design • UX Unicórnio (Cursando)</p>
-                  </div>
+                                      </div>
                 </div>
                 <div className="flex items-center gap-3 rounded-2xl border border-zinc-200 bg-zinc-100/80 dark:border-white/[0.06] dark:bg-black/20 p-4 transition-all hover:border-zinc-300 dark:hover:border-white/10">
                   <Briefcase className="h-5 w-5 shrink-0 text-amber-400" />
                   <div>
                     <p className="text-sm font-medium text-zinc-950 dark:text-white">Experiência</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Tech Lead • Nexus Flow Tech • Mai/2026 — Atualmente</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Analista de Sistemas Jr. • Telecom Fiber NET • Dez/2024 — Atualmente</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Consultor em Tecnologia • Telecom Fiber NET • Ago/2020 — Dez/2024</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Técnico em Telecomunicações • Telecom Fiber NET • Nov/2015 — Ago/2020</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400">AI Engineer | AI Integration • Nexus Flow Tech • Mai/2026 — Atualmente</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400">AI Engineer | Software Engineering • Pion G Plus • Ago/2026 — Atualmente</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400">DevOps Consultant • Telecom Fiber NET • Nov/2020 — Out/2026</p>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400">Técnico Instalador • Fiber.net • Set/2015 — Out/2020</p>
                   </div>
                 </div>
               </div>

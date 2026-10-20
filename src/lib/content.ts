@@ -1,11 +1,11 @@
 export const siteContent = {
-  name: "Kadu Ribeiro",
-  role: "AI Engineer | AI Integration | Full Stack Development",
-  headline: "Construo software útil conectando engenharia, inteligência artificial e negócio.",
+  name: "Carlos Eduardo",
+  role: "AI Engineer | AI Integration | LLM Applications | RAG | Intelligent Systems",
+  headline: "Integro inteligência artificial a software e processos reais de negócio.",
   description:
-    "Profissional de software com experiência em desenvolvimento Full Stack, integração de APIs, automação e IA aplicada. Combino engenharia de software, experiência operacional em telecomunicações e visão de negócio para transformar problemas reais em soluções digitais.",
+    "Profissional de desenvolvimento de software com experiência em aplicações Full Stack, integração de APIs, bancos de dados e automação. Atuo na interseção entre engenharia de software, inteligência artificial e operações de telecomunicações. Desenvolvi funcionalidades de autoatendimento e integrei a Google Gemini API ao Fiber.AI. Atualmente, meu foco é AI Engineering e AI Integration, com base técnica em React, TypeScript, Node.js, PostgreSQL, Docker e infraestrutura de redes.",
   location: "Brasil",
-  email: "kaduribeiro@kadudev.com",
+  email: "carlos847@gmail.com",
 };
 
 export const navLinks = [
@@ -18,15 +18,15 @@ export const navLinks = [
 export const highlights = [
   {
     value: "10+",
-    label: "anos em tecnologia e operações",
+    label: "anos em telecom e operações",
   },
   {
     value: "Full Stack",
     label: "web e integrações",
   },
   {
-    value: "IA + UX",
-    label: "foco em evolução",
+    value: "IA + APIs",
+    label: "integração de sistemas",
   },
 ];
 
@@ -36,8 +36,12 @@ export const hardSkills = [
   { name: "TypeScript", category: "Frontend", description: "Aplicações tipadas, previsíveis e escaláveis" },
   { name: "Tailwind CSS", category: "Frontend", description: "Interfaces responsivas e sistemas visuais consistentes" },
   { name: "Node.js", category: "Backend", description: "APIs, automações e integração de serviços" },
+  { name: "PostgreSQL", category: "Dados", description: "Modelagem relacional e persistência de dados" },
+  { name: "Prisma ORM", category: "Dados", description: "Acesso tipado ao banco e modelagem de entidades" },
+  { name: "Google Gemini API", category: "IA", description: "Integração de IA generativa em aplicações web" },
+  { name: "jsPDF", category: "Integrações", description: "Geração dinâmica de documentos PDF" },
   { name: "APIs REST", category: "Backend", description: "Consumo e integração entre plataformas" },
-  { name: "Firebase", category: "Backend", description: "Autenticação, dados e serviços gerenciados" },
+  { name: "MongoDB", category: "Dados", description: "Banco de dados não relacional" },
   { name: "Automação", category: "Backend", description: "Otimização de processos e fluxos operacionais" },
   { name: "Git e GitHub", category: "Engenharia", description: "Versionamento e colaboração no desenvolvimento" },
   { name: "GitHub Actions", category: "Engenharia", description: "Integração, entrega e publicação contínuas" },
@@ -76,103 +80,81 @@ export const softSkills = [
 
 export const journey = [
   {
-    title: "UX Design — UX Unicórnio",
-    period: "Cursando",
+    title: "AI Engineer | AI Integration — Nexus Flow Tech",
+    period: "Mai/2026 — Atualmente",
     description:
-      "Formação prática em pesquisa, estratégia, experiência do usuário, prototipação e construção de produtos digitais centrados nas pessoas.",
+      "Pesquisa e avaliação de tecnologias de IA e LLMs, análise de oportunidades de automação industrial e contribuição para arquitetura e definição de soluções inteligentes.",
+  },
+  {
+    title: "AI Engineer | Software Engineering — Pion G Plus",
+    period: "Ago/2026 — Atualmente",
+    description:
+      "Desenvolvimento e evolução de funcionalidades de ERP, aplicações Full Stack, APIs REST e persistência de dados com PostgreSQL; atuação com testes, refatoração, Git e Docker.",
+  },
+  {
+    title: "DevOps Consultant — Telecom Fiber NET LTDA",
+    period: "Nov/2020 — Out/2026",
+    description:
+      "Desenvolvimento de plataforma digital, integração da Google Gemini API no Fiber.AI, autoatendimento, geração dinâmica de PDFs e atuação com infraestrutura de fibra óptica, BGP, CGNAT e BRAS.",
+  },
+  {
+    title: "Técnico Instalador — Fiber.net",
+    period: "Set/2015 — Out/2020",
+    description:
+      "Experiência técnica em telecomunicações e infraestrutura de fibra óptica.",
   },
   {
     title: "Engenharia de Software — Anhanguera",
-    period: "Fev/2024 — Jun/2027 (Cursando)",
+    period: "Fev/2024 — Jun/2027 (cursando)",
     description:
-      "Bacharelado com foco em desenvolvimento de software, arquitetura de sistemas e qualidade de produtos digitais.",
+      "Bacharelado em andamento com foco em desenvolvimento de software e engenharia de sistemas.",
   },
   {
     title: "Administração — Estácio",
     period: "Jan/2021 — Out/2024",
     description:
-      "Bacharelado concluído, fortalecendo visão de negócio, gestão, estratégia e tomada de decisão.",
-  },
-  {
-    title: "Tech Lead — Nexus Flow Tech",
-    period: "Mai/2026 — Atualmente",
-    description:
-      "Liderança técnica de produtos digitais, conectando desenvolvimento Full Stack, IA, automação e decisões de arquitetura.",
-  },
-  {
-    title: "Desenvolvimento de Sistemas — Telecom Fiber NET",
-    period: "Dez/2024 — Atualmente",
-    description:
-      "Desenvolvimento Full Stack, integração de serviços, automação de processos, performance e evolução da experiência do usuário.",
-  },
-  {
-    title: "Consultor em Tecnologia — Telecom Fiber NET",
-    period: "Ago/2020 — Dez/2024",
-    description:
-      "Consultoria técnica, desenvolvimento de soluções digitais e transformação de necessidades operacionais em produtos e processos mais eficientes.",
-  },
-  {
-    title: "Técnico em Telecomunicações — Telecom Fiber NET",
-    period: "Nov/2015 — Ago/2020",
-    description:
-      "Atuação em implantação e manutenção de redes de fibra óptica, suporte técnico e treinamento de equipes.",
+      "Bacharelado concluído, complementando a base técnica com conhecimentos de gestão e negócios.",
   },
 ];
 
 export const projects = [
   {
-    title: "MyFlix",
-    category: "Frontend",
-    year: "2025",
-    summary: "Catálogo de filmes e séries com dados reais",
+    title: "Plataforma Digital Fiber-NET Telecom",
+    category: "Full Stack + AI Integration",
+    year: "2025–2026",
+    summary: "Autoatendimento, IA aplicada e serviços digitais",
     description:
-      "Interface inspirada em streaming para explorar títulos populares, pesquisar conteúdos e consultar trailers usando a API do TMDB.",
-    image: "/images/myflix.webp",
-    imageAlt: "Tela do MyFlix exibindo catálogos de filmes e séries",
-    tech: ["React", "TypeScript", "CSS", "Vite"],
-    github: "https://github.com/KaduSR/Myflix",
-    accent: "from-fuchsia-500/20 via-purple-500/10 to-transparent",
-  },
-  {
-    title: "Gerenciador de Prompts",
-    category: "Ferramenta",
-    year: "2025",
-    summary: "Organização de prompts reutilizáveis",
-    description:
-      "Ferramenta para criar, salvar e organizar prompts, reduzindo a repetição em fluxos de trabalho apoiados por inteligência artificial.",
-    image: "/images/prompts.png",
-    imageAlt: "Tela do Gerenciador de Prompts com prompts organizados",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/KaduSR/Gerenciador-de-Prompts",
-    accent: "from-cyan-500/20 via-sky-500/10 to-transparent",
-  },
-  {
-    title: "Fiber NET Telecom",
-    category: "Full Stack",
-    year: "2025",
-    summary: "Presença digital para uma operação de telecom",
-    description:
-      "Aplicação web para apresentar serviços, planos e canais de atendimento da Fiber NET Telecom em uma experiência responsiva.",
+      "Plataforma desenvolvida com React, TypeScript e Vite. Inclui Fiber.AI integrado à Google Gemini API, funcionalidades de autoatendimento, geração dinâmica de PDFs e consulta do status da rede.",
     image: "/images/fibernet.png",
     imageAlt: "Tela do site Fiber NET Telecom",
-    tech: ["React", "Next.js", "Node.js", "TypeScript", "Firebase"],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Google Gemini API", "jsPDF"],
     live: "https://fibernettelecom.com/",
     github: "https://github.com/KaduSR/Fiber-NET-Telecom-Web",
     accent: "from-amber-500/20 via-orange-500/10 to-transparent",
   },
   {
-    title: "Nexus Flow Tech",
-    category: "Site institucional",
-    year: "2026",
-    summary: "Tecnologia e automação apresentadas com clareza",
+    title: "Aparatus Barbershop",
+    category: "Projeto pessoal · Full Stack",
+    year: "2025",
+    summary: "Gestão de agendamentos e operações",
     description:
-      "Site institucional desenvolvido para apresentar soluções de automação de processos, integração de sistemas, inteligência artificial e gestão orientada por dados.",
-    image: "/images/nexus-flow-tech.png",
-    imageAlt: "Tela do site institucional Nexus Flow Tech",
-    tech: ["Site institucional", "Automação", "IA", "Integrações"],
-    live: "https://nexusflowtech.com.br/",
-    ctaLabel: "Site",
-    accent: "from-violet-500/20 via-cyan-500/10 to-transparent",
+      "Aplicação Full Stack descrita no currículo, com backend baseado em Server Actions, modelagem de dados relacional, autenticação e autorização, dashboard administrativo, rotinas de agendamento e integração de pagamentos.",
+    image: "/images/myflix.webp",
+    imageAlt: "Imagem ilustrativa temporária para o projeto Aparatus Barbershop",
+    tech: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "NextAuth.js", "Stripe"],
+    accent: "from-violet-500/20 via-purple-500/10 to-transparent",
+  },
+  {
+    title: "Aplicação Web",
+    category: "Projeto pessoal · Frontend",
+    year: "2025",
+    summary: "Interface responsiva com integração de API",
+    description:
+      "Projeto de interface responsiva desenvolvido com React e TypeScript, componentes reutilizáveis, integração com API externa e estilização com Tailwind CSS.",
+    image: "/images/prompts.png",
+    imageAlt: "Imagem ilustrativa temporária para o projeto Aplicação Web",
+    tech: ["React", "TypeScript", "Tailwind CSS", "API REST"],
+    accent: "from-cyan-500/20 via-sky-500/10 to-transparent",
   },
 ];
 
@@ -187,94 +169,17 @@ export const contactLinks = [
   },
   {
     label: "Email",
-    href: "mailto:kaduribeiro@kadudev.com",
+    href: "mailto:carlos847@gmail.com",
   },
 ];
 
 
 export const certifications = [
   {
-    title: "MBA em Inteligência Artificial e Gestão de Pessoas",
-    issuer: "Faculdade Bookplay",
-    workload: "480 horas",
-    type: "Pós-graduação",
-    category: "IA",
-  },
-  {
-    title: "MBA em Web Design",
-    issuer: "Faculdade Bookplay",
-    workload: "560 horas",
-    type: "Pós-graduação",
-    category: "Design & Produto",
-  },
-  {
-    title: "Pós-graduação em Gestão Empresarial",
-    issuer: "Faculdade Bookplay",
-    workload: "360 horas",
-    type: "Pós-graduação",
-    category: "Negócios",
-  },
-  {
-    title: "Java e IA para Iniciantes com a NTT DATA",
-    issuer: "DIO / NTT DATA",
-    workload: "1 hora",
-    type: "Curso",
-    category: "IA & Desenvolvimento",
-  },
-  {
-    title: "Fundamentos de Engenharia de Dados",
+    title: "Navegação com Expo Router — React Native",
     issuer: "LinkedIn Learning",
-    workload: "1h 5min",
+    workload: "",
     type: "Curso",
-    category: "Dados",
-  },
-  {
-    title: "Introdução à Inteligência Artificial",
-    issuer: "LinkedIn Learning",
-    workload: "1h 42min",
-    type: "Curso",
-    category: "IA",
-  },
-  {
-    title: "Fundamentos de React",
-    issuer: "LinkedIn Learning",
-    workload: "2h 38min",
-    type: "Curso",
-    category: "Frontend",
-  },
-  {
-    title: "Fundamentos de HTTP para Desenvolvedores",
-    issuer: "LinkedIn Learning",
-    workload: "1h 38min",
-    type: "Curso",
-    category: "Backend & APIs",
-  },
-  {
-    title: "Full Stack Weekend — SaaS do zero ao deploy",
-    issuer: "Full Stack Weekend",
-    workload: "12 horas",
-    type: "Workshop",
-    category: "Full Stack",
-  },
-  {
-    title: "Discover",
-    issuer: "Rocketseat",
-    workload: "12 horas",
-    type: "Formação",
-    category: "Desenvolvimento Web",
-  },
-  {
-    title: "Java Essencial e Desenvolvimento Colaborativo com Git",
-    issuer: "DIO",
-    workload: "9 horas",
-    type: "Curso",
-    category: "Java & Engenharia",
-  },
-  {
-    title: "Versionamento de Código com Git e GitHub",
-    issuer: "DIO",
-    workload: "2 horas",
-    type: "Curso",
-    category: "Engenharia",
+    category: "Desenvolvimento mobile",
   },
 ];
