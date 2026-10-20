@@ -11,6 +11,7 @@ export const siteContent = {
 export const navLinks = [
   { href: "/#sobre", label: "Sobre" },
   { href: "/#projetos", label: "Projetos" },
+  { href: "/templates", label: "Templates" },
   { href: "/#certificacoes", label: "Formação" },
   { href: "/#contato", label: "Contato" },
 ];
