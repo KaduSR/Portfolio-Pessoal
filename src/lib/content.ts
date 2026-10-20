@@ -11,6 +11,7 @@ export const siteContent = {
 export const navLinks = [
   { href: "/#sobre", label: "Sobre" },
   { href: "/#projetos", label: "Projetos" },
+  { href: "/#certificacoes", label: "Formação" },
   { href: "/#contato", label: "Contato" },
 ];
 
@@ -99,7 +100,7 @@ export const journey = [
       "Liderança técnica de produtos digitais, conectando desenvolvimento Full Stack, IA, automação e decisões de arquitetura.",
   },
   {
-    title: "Analista de Sistemas Jr. — Telecom Fiber NET",
+    title: "Desenvolvimento de Sistemas — Telecom Fiber NET",
     period: "Dez/2024 — Atualmente",
     description:
       "Desenvolvimento Full Stack, integração de serviços, automação de processos, performance e evolução da experiência do usuário.",
